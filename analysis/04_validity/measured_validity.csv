@@ -1,0 +1,12 @@
+score,component,outcome,horizon_months,evidence,coverage,n,auroc,auroc_lo,auroc_hi,rank_correlation,operating_point,sensitivity,specificity,pr_auc,lift_worst_decile,registered_gain,registered_gain_lo,registered_gain_hi,warns,similar_activity,holds_at_similar_activity,adds_registered_model
+Scorecard Maintained,scorecard_Maintained,O1,24,reconstructed,0.9745,1644,0.7065,0.6696,0.7432,,Scorecard Maintained = 0,0.2933,0.9694,0.334,3.841,0.0085,-0.0021,0.0161,True,0.6187,False,False
+openCode maintenance,opencode_maintenance,O1,24,reconstructed,0.9745,1644,0.5217,0.4867,0.556,,"openCode maintenance, no badge",0.476,0.5097,0.1308,0.9744,-0.0009,-0.007,0.002,False,0.5019,False,False
+CrOSSD maturity,maturity_level,O1,24,recorded,1.0,1687,0.6106,0.5713,0.6465,,,,,0.1897,1.4503,0.0009,-0.0065,0.0035,False,0.6309,False,False
+CrOSSD bus factor,bus_factor,O1,24,recorded,0.8417,1420,0.6798,0.6386,0.7194,,CrOSSD bus factor at most 1,0.8456,0.3941,0.1529,1.7524,0.0059,-0.0149,0.0179,True,0.6663,True,False
+CrOSSD elephant factor,elephant_factor,O1,24,recorded,1.0,1687,0.6569,0.619,0.6942,,CrOSSD elephant factor at most 1,0.6235,0.6285,0.2344,2.1254,-0.0003,-0.0091,0.0022,True,0.6479,True,False
+CrOSSD support rate,support_rate,O1c_share,24,recorded,0.9991,1067,0.4152,0.3708,0.4585,,,,,0.164,0.5729,0.0037,-0.0159,0.0125,False,0.5565,False,False
+openCode issue response,opencode_response_ok,O1c_share,24,reconstructed,1.0,1068,0.6588,0.6294,0.685,,openCode response criterion failed,0.8906,0.4269,0.246,1.4134,0.048,0.0155,0.0718,True,0.666,True,True
+Scorecard aggregate,scorecard_aggregate_t0,O2b,24,reconstructed,0.9948,576,0.4016,0.3256,0.4887,,,,,0.0766,0.9615,-0.0032,-0.0292,0.003,False,0.4763,False,False
+openCode security,opencode_security,O2b,24,reconstructed,0.9965,577,0.4606,0.4051,0.5132,,"openCode security, no badge",0.8077,0.1162,0.084,0.921,-0.0077,-0.0309,0.0072,False,0.4767,False,False
+CrOSSD criticality,criticality_score,I1b,24,recorded,1.0,330,,,,0.5337,,,,,,0.0008,-0.0022,0.0023,True,0.122,True,False
+OpenSSF Criticality,openssf_criticality_published,I1b,24,recorded,0.9697,320,,,,0.6662,,,,,,0.0001,-0.0029,0.001,True,0.1701,True,False
