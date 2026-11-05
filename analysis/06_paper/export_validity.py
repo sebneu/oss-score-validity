@@ -132,6 +132,10 @@ def main() -> int:
     m["VBeatDays"] = words[int((held[held.outcome != "O2b"].days_since_last_commit_diff_lo > 0).sum())]
     m["VWarnCount"] = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six"}.get(int(binary.warns.sum()), str(int(binary.warns.sum())))
     m["VWarnCap"] = m["VWarnCount"].capitalize()
+    at_low, at_high = binary[binary.auroc_lo > 0.55], binary[binary.auroc_lo > 0.65]
+    if set(at_low.index) - set(binary[binary.warns].index) != {"CrOSSD maturity"} or list(at_high.index) != ["Scorecard Maintained"]:
+        raise SystemExit("the text names the maturity level at 0.55 and Maintained alone at 0.65")
+    m["VWarnAtLow"] = words[len(at_low)]
     m["VAddCount"] = {0: "none", 1: "one", 2: "two", 3: "three"}.get(int(primary.adds.sum()), str(int(primary.adds.sum())))
     m["VBusCover"] = pc(primary.loc["CrOSSD bus factor"].coverage)
     m["VMntPLrt"] = pvalue(primary.loc["Scorecard Maintained"].p_adds_holm)
@@ -305,13 +309,15 @@ def main() -> int:
         measure = f"$\\rho$ {f2(r.rho)}" if r.outcome == "I1b" else f2(r.auroc)
         sim = simple.loc[score]
         similar = sim.within_rho if r.outcome == "I1b" else sim.within_commits
-        rows.append([NAMES[score], OUTCOMES[r.outcome], EVIDENCE.get(kind, kind), pc(r.coverage), measure, f"{pc(se)} / {pc(sp)}" if point else "--", yes(r.warns), f2(similar), yes(bool(sim.holds))])
+        rows.append([NAMES[score], OUTCOMES[r.outcome], EVIDENCE.get(kind, kind), pc(r.coverage), measure, f"{pc(se)} / {pc(sp)}" if point else "--", "$\\rho>0$" if r.outcome == "I1b" and r.warns else yes(r.warns), f2(similar), "$\\rho>0$" if r.outcome == "I1b" and sim.holds else yes(bool(sim.holds))])
         records.append({"score": score, "component": r.component, "outcome": r.outcome, "horizon_months": 24, "evidence": kind, "coverage": round(r.coverage, 4), "n": int(r.n),
                         "auroc": None if r.outcome == "I1b" else round(r.auroc, 4), "auroc_lo": None if r.outcome == "I1b" else round(r.auroc_lo, 4), "auroc_hi": None if r.outcome == "I1b" else round(r.auroc_hi, 4),
                         "rank_correlation": round(r.rho, 4) if r.outcome == "I1b" else None, "operating_point": point, "sensitivity": None if pd.isna(se) else round(se, 4), "specificity": None if pd.isna(sp) else round(sp, 4),
                         "pr_auc": None if r.outcome == "I1b" else round(r.pr_auc, 4), "lift_worst_decile": None if r.outcome == "I1b" else round(r.lift, 4),
                         "registered_gain": round(r.gain, 4), "registered_gain_lo": round(r.gain_lo, 4), "registered_gain_hi": round(r.gain_hi, 4), "warns": bool(r.warns), "similar_activity": round(similar, 4), "holds_at_similar_activity": bool(sim.holds), "adds_registered_model": bool(r.adds)})
     table(GENERATED / "t_v_summary.tex", "llrrrccrc", ["Score", "Outcome", "Evidence", "Coverage", "AUROC", "Se / Sp", "Warns", "Similar", "Holds"], rows)
+    summary = GENERATED / "t_v_summary.tex"
+    summary.write_text(summary.read_text().replace(f"{NAMES['CrOSSD criticality']} &", f"\\midrule\n{NAMES['CrOSSD criticality']} &"))
     pd.DataFrame(records).to_csv(ROOT / "analysis" / "04_validity" / "measured_validity.csv", index=False)
 
     out = GENERATED / "validity.tex"
