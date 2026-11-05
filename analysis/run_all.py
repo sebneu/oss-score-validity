@@ -73,6 +73,7 @@ STAGES: list[tuple[str, str, list[str]]] = [
             "analysis/03_instruments/rule_adapters.py --t0 2024-08-01",
             "analysis/03_instruments/criticality_published.py --t0 2024-08-01",
             "analysis/03_instruments/rebuild_bus_factor.py --t0 2024-08-01",
+            "analysis/03_instruments/bus_factor_readings.py --t0 2024-08-01",
             "analysis/03_instruments/backdating.py",
             "analysis/03_instruments/collect_policy_paths.py --t0 2024-08-01",
             "analysis/03_instruments/collect_scorecard.py --t0 2024-08-01",
@@ -90,6 +91,7 @@ STAGES: list[tuple[str, str, list[str]]] = [
             "analysis/04_validity/outcome_variants.py --t0 2024-08-01",
             "analysis/04_validity/validity.py --t0 2024-08-01 --resamples 2000",
             "analysis/04_validity/simple.py --t0 2024-08-01 --resamples 2000",
+            "analysis/04_validity/bus_documented.py --t0 2024-08-01 --resamples 2000",
             "analysis/04_validity/fig_validity.py",
             "analysis/06_paper/export_validity.py",
         ],
@@ -111,7 +113,8 @@ STAGES: list[tuple[str, str, list[str]]] = [
             "analysis/03_instruments/freeze_features.py --t0 2025-01-01",
             "analysis/00_probes/probe_github.py demand --t0 2025-01-01 --horizon 12",
             "analysis/02_outcomes/label_outcomes.py --t0 2025-01-01 --months 12",
-            "analysis/04_validity/robustness.py --t0 2025-01-01 --resamples 2000",
+            "analysis/04_validity/bus_documented.py --t0 2024-08-01 --resamples 2000",
+    "analysis/04_validity/robustness.py --t0 2025-01-01 --resamples 2000",
         ],
     ),
     (
@@ -139,6 +142,7 @@ STAGES: list[tuple[str, str, list[str]]] = [
 REPRODUCE = [
     "analysis/04_validity/validity.py --t0 2024-08-01 --resamples 2000",
     "analysis/04_validity/simple.py --t0 2024-08-01 --resamples 2000",
+    "analysis/04_validity/bus_documented.py --t0 2024-08-01 --resamples 2000",
     "analysis/04_validity/robustness.py --t0 2025-01-01 --resamples 2000",
     "analysis/04_validity/fig_validity.py",
     "analysis/06_paper/export_validity.py",

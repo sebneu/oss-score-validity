@@ -295,3 +295,10 @@ Deviations, all logged in the paper too unless marked:
 - GH Archive events for gone repositories cover August 2026 onwards only, reused from the first date. Two gone repositories count as failures, so at most two events are affected.
 - Not in the paper, no effect on the table: stars and dependents among the baselines date from the deps.dev snapshot of 2024-07-29, and the Criticality lists from the first date's cohort (720 of 759 covered). The table uses neither.
 - Same simple measures as the main analysis; no logistic model at this date.
+
+## After an outside review of the manuscript (2026-11-05, after the results were known)
+
+- **Bus factor as documented.** Added after the results and descriptive; the stored value stays the registered reading. `analysis/03_instruments/bus_factor_readings.py` and `analysis/04_validity/bus_documented.py`. As documented, over six months, it warns and does not hold at similar activity, so the "holds" belongs to the implementation. Reported in the results and the discussion.
+- **Versions of the rebuilt instruments.** Scorecard ran as v5.6.0 (2026-10-12); v5.0.0 (2024-07-19) was current at t0. `checks/evaluation/maintained.go` and the probes behind it changed only in a message text, lint and a nil check between the two; other checks changed. v5.0.0 was not run. The openCode rules were read on 2026-11-03; the earliest Wayback capture of the page is 2025-04-27. Stated in the results and the threats.
+- **Dropped research question.** The registration lists a fourth question (validity as queryable data). This log said the paper states the deviation, but the sentence was lost when the registration section was shortened. It is back in the Registration paragraph.
+- **Abstract.** Cut to the 250 words JSS allows. It now says that the comparison at similar activity was chosen after the results, that two of the three scores that hold are ours, and that only the openCode response criterion adds information in the registered model. "Popularity and recent activity do at least as well" became "recent activity", because stars alone reach 0.61 on failure against 0.71 for `Maintained`.

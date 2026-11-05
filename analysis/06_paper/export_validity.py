@@ -273,6 +273,11 @@ def main() -> int:
     m["VSensBelow"] = n(below.outcome.nunique())
 
     # --- second freeze date ------------------------------------------------------------
+    bus = pd.read_csv(PROBES / "validity_bus_documented.csv").set_index("score")
+    for key, name in (("VBusDoc", "documented_6"), ("VBusDocSame", "documented_6_same"), ("VBusImpl", "implemented_6")):
+        row = bus.loc[name]
+        m |= {key + "N": n(row.n), key + "Auc": f2(row.auroc), key + "Lo": f2(row.auroc_lo), key + "Hi": f2(row.auroc_hi),
+              key + "Sim": f2(row.within_commits), key + "SimLo": f2(row.within_commits_lo), key + "SimHi": f2(row.within_commits_hi)}
     robust = pd.read_csv(PROBES / "validity_robustness.csv").set_index("score")
     second = pd.read_parquet(ROOT / "data" / "processed" / "outcomes_2025-01-01.parquet")
     m |= {"VSecProjects": n(len(second)), "VSecFailures": n(second.O1.sum()), "VSecGone": words[int(second.O1a_gone.sum())], "VSecUnanswered": n(second.O1c_share.astype("boolean").sum()), "VSecUnansweredBase": n(second.O1c_share.notna().sum()),
