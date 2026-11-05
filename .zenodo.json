@@ -1,0 +1,13 @@
+{
+  "upload_type": "software",
+  "title": "Replication package: Would the Score Have Warned Us? A Point-in-Time Validity Audit of Open-Source Health and Security Scores",
+  "description": "<p>Code and derived data for the paper. Raw source data are not redistributed.</p>",
+  "creators": [
+    {"name": "Neumaier, Sebastian", "affiliation": "University of Applied Sciences St. Pölten, Austria; Vienna University of Economics and Business, Austria", "orcid": "0000-0002-9804-4882"},
+    {"name": "Dam, Tobias", "affiliation": "University of Applied Sciences St. Pölten, Austria"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "notes": "Funded by the Austrian Research Promotion Agency (FFG), project DigiSov-CrOSSD, no. 68758333, and the Internet Stiftung (netidee), project CrOSSD2."
+}
