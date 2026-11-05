@@ -1,0 +1,29 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.35cm}>{\raggedright\arraybackslash}p{2.15cm}>{\raggedright\arraybackslash}p{2.45cm}rr}
+\toprule
+Case & Mechanism & Component & Value & Share \\
+\midrule
+axios & Stolen npm account & Signed-Releases & -- & -- \\
+\addlinespace[2pt]
+Lightning & PyPI releases, cause open & Signed-Releases & -- & -- \\
+\addlinespace[2pt]
+Ultralytics & Actions workflows, build cache & Dangerous-Workflow & 0 & 5\% \\
+ &  & Token-Permissions & 0 & 92\% \\
+\addlinespace[2pt]
+React & Flaw in own code & Code-Review & 7 & 63\% \\
+ &  & Fuzzing & -- & -- \\
+\addlinespace[2pt]
+MongoDB & Flaw in own code & Code-Review & 0 & 16\% \\
+ &  & Fuzzing & -- & -- \\
+\addlinespace[2pt]
+MinIO & End of maintenance & Maintained & 10 & 100\% \\
+ &  & openCode maintenance & 3 & 100\% \\
+\addlinespace[2pt]
+XZ Utils* & Payload in test files, trigger in tarballs & Code-Review & 0 & 57\% \\
+ &  & Binary-Artifacts & 8 & 11\% \\
+ &  & Bus factor & 1 & 72\% \\
+\addlinespace[2pt]
+tj-actions* & Version tags moved & Token-Permissions & 0 & 92\% \\
+ &  & Dangerous-Workflow & 10 & 100\% \\
+\bottomrule
+\end{tabular}
