@@ -1,0 +1,11 @@
+ours,published,n,spearman,median_abs_diff
+score_a,published,150,0.9029325747811013,0.08678059840160382
+score_b,published,73,0.7985931136616069,0.08261970380389505
+ours_created_since,pub_created_since,150,0.930064604138771,1.4169716077772847
+ours_updated_since,pub_updated_since,150,0.6938013080747677,0.04943487035820314
+ours_contributor_count,pub_contributor_count,150,0.9993367736955099,7.0
+ours_commit_frequency,pub_commit_frequency,150,0.996124634092711,0.0950000000000002
+ours_recent_releases_count,pub_recent_release_count,150,0.7689125207049311,0.0
+ours_closed_issues_count,pub_closed_issues_count,150,-0.19139595561828315,3.0
+ours_updated_issues_count,pub_updated_issues_count,150,-0.2764850865227793,12.5
+ours_comment_frequency,pub_issue_comment_frequency,150,-0.13438515588734828,1.0

@@ -1,0 +1,63 @@
+repo,commit,check,score_at_commit,reason_at_commit,score_at_head,reason_at_head
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Binary-Artifacts,10,no binaries found in the repo,10,no binaries found in the repo
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Security-Policy,4,security policy file detected,10,security policy file detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,License,10,license file detected,10,license file detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Dangerous-Workflow,10,no dangerous workflow patterns detected,10,no dangerous workflow patterns detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Token-Permissions,0,detected GitHub workflow tokens with excessive permissions,10,GitHub workflow tokens follow principle of least privilege
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Pinned-Dependencies,0,dependency not pinned by hash detected -- score normalized to 0,6,dependency not pinned by hash detected -- score normalized to 6
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Dependency-Update-Tool,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Dependency-Update-Tool
+2026/11/04 12:52:50 error during command execution: GetEnabled: ",10,update tool detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Packaging,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Packaging
+2026/11/04 12:52:55 error during command execution: GetEnabled: internal erro",10,packaging workflow detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Code-Review,4,Found 10/21 approved changesets -- score normalized to 4,10,all changesets reviewed
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Signed-Releases,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Signed-Releases
+2026/11/04 12:53:08 error during command execution: GetEnabled: interna",-1,no releases found
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Vulnerabilities,10,0 existing vulnerabilities detected,10,0 existing vulnerabilities detected
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Fuzzing,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Fuzzing
+2026/11/04 12:53:21 error during command execution: GetEnabled: internal error:",0,project is not fuzzed
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,SBOM,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: SBOM
+2026/11/04 12:53:26 error during command execution: GetEnabled: internal error: Un",-1,"check is not supported for this request: SCORECARD_EXPERIMENTAL is not set, not running the SBOM check"
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,SAST,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: SAST
+2026/11/04 12:53:30 error during command execution: GetEnabled: internal error: Un",10,SAST tool is run on all commits
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,CI-Tests,0,0 out of 13 merged PRs checked by a CI test -- score normalized to 0,10,30 out of 30 merged PRs checked by a CI test -- score normalized to 10
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Contributors,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Contributors
+2026/11/04 12:54:05 error during command execution: GetEnabled: internal e",10,project has 108 contributing companies or organizations
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Maintained,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Maintained
+2026/11/04 12:54:25 error during command execution: GetEnabled: internal err",10,28 commit(s) and 4 issue activity found in the last 90 days -- score normalized to 10
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Branch-Protection,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Branch-Protection
+2026/11/04 12:54:28 error during command execution: GetEnabled: inter",-1,internal error: error during branchesHandler.setup: internal error: some github tokens can't read classic branch protection rules: https://github.com/ossf/score
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,Webhooks,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Webhooks
+2026/11/04 12:54:33 error during command execution: GetEnabled: internal error",-1,"check is not supported for this request: SCORECARD_EXPERIMENTAL is not set, not running the Webhook check"
+expressjs/express,723b5451bbcbab69bc8ded50ccd6545a79b8fe64,CII-Best-Practices,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: CII-Best-Practices
+2026/11/04 12:54:37 error during command execution: GetEnabled: inte",0,no effort to earn an OpenSSF best practices badge detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Binary-Artifacts,10,no binaries found in the repo,10,no binaries found in the repo
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Security-Policy,9,security policy file detected,9,security policy file detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,License,10,license file detected,10,license file detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Dangerous-Workflow,10,no dangerous workflow patterns detected,10,no dangerous workflow patterns detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Token-Permissions,0,detected GitHub workflow tokens with excessive permissions,10,GitHub workflow tokens follow principle of least privilege
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Pinned-Dependencies,4,dependency not pinned by hash detected -- score normalized to 4,8,dependency not pinned by hash detected -- score normalized to 8
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Dependency-Update-Tool,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Dependency-Update-Tool
+2026/11/04 12:55:33 error during command execution: GetEnabled: ",10,update tool detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Packaging,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Packaging
+2026/11/04 12:55:37 error during command execution: GetEnabled: internal erro",10,packaging workflow detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Code-Review,3,Found 3/8 approved changesets -- score normalized to 3,0,Found 2/24 approved changesets -- score normalized to 0
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Signed-Releases,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Signed-Releases
+2026/11/04 12:55:49 error during command execution: GetEnabled: interna",6,3 out of the last 5 releases have a total of 3 signed artifacts.
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Vulnerabilities,0,14 existing vulnerabilities detected,0,51 existing vulnerabilities detected
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Fuzzing,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Fuzzing
+2026/11/04 12:56:02 error during command execution: GetEnabled: internal error:",10,project is fuzzed
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,SBOM,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: SBOM
+2026/11/04 12:56:05 error during command execution: GetEnabled: internal error: Un",-1,"check is not supported for this request: SCORECARD_EXPERIMENTAL is not set, not running the SBOM check"
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,SAST,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: SAST
+2026/11/04 12:56:08 error during command execution: GetEnabled: internal error: Un",0,SAST tool is not run on all commits -- score normalized to 0
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,CI-Tests,0,0 out of 13 merged PRs checked by a CI test -- score normalized to 0,10,5 out of 5 merged PRs checked by a CI test -- score normalized to 10
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Contributors,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Contributors
+2026/11/04 12:56:32 error during command execution: GetEnabled: internal e",10,project has 78 contributing companies or organizations
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Maintained,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Maintained
+2026/11/04 12:56:51 error during command execution: GetEnabled: internal err",10,21 commit(s) and 13 issue activity found in the last 90 days -- score normalized to 10
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Branch-Protection,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Branch-Protection
+2026/11/04 12:56:55 error during command execution: GetEnabled: inter",3,branch protection is not maximal on development and all release branches
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,Webhooks,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: Webhooks
+2026/11/04 12:57:00 error during command execution: GetEnabled: internal error",-1,"check is not supported for this request: SCORECARD_EXPERIMENTAL is not set, not running the Webhook check"
+pallets/flask,a8956feba1e40105e7bc78fa62ce36c58d1c91e1,CII-Best-Practices,,"Error: GetEnabled: internal error: Unsupported RequestType [1] by check: CII-Best-Practices
+2026/11/04 12:57:03 error during command execution: GetEnabled: inte",0,no effort to earn an OpenSSF best practices badge detected

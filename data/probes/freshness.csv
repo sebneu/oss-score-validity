@@ -1,0 +1,4 @@
+stratum,repositories,scorecard_published,date_parsed,age_median,age_p90,age_max,within_30d,over_365d,criticality_listed
+all,1646,834,834,9.0,16.0,1542.0,811,13,1275
+most_starred,774,627,627,9.0,16.0,1542.0,608,12,744
+random_sample,872,207,207,2.0,16.0,392.0,203,1,531

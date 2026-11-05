@@ -1,0 +1,50 @@
+instrument,component,class,risk,weight,why
+Scorecard,Maintained,partial,High,7.5,rebuilt from dated commits and issues; association read today
+Scorecard,Binary-Artifacts,rebuilt,High,7.5,files at the commit
+Scorecard,Dangerous-Workflow,rebuilt,Critical,10.0,files at the commit
+Scorecard,Token-Permissions,rebuilt,High,7.5,files at the commit
+Scorecard,Pinned-Dependencies,rebuilt,Medium,5.0,files at the commit
+Scorecard,Code-Review,rebuilt,High,7.5,commit history with dated reviews
+Scorecard,Security-Policy,partial,Medium,5.0,"files at the commit; the owner's .github repository is read today, so we keep it only if committed by t0"
+Scorecard,License,none,Low,2.5,"the check asks GitHub's license API, which answers for today whatever the commit"
+Scorecard,CI-Tests,none,Low,2.5,"runs at a commit, but GitHub has deleted the check data of old commits, so nearly every value reads zero"
+Scorecard,Vulnerabilities,none,High,7.5,"runs at a commit, but asks OSV today, so later advisories enter"
+Scorecard,Dependency-Update-Tool,none,High,7.5,the CLI refuses this check at a commit
+Scorecard,Branch-Protection,none,High,7.5,current settings; the CLI refuses this check at a commit
+Scorecard,Signed-Releases,none,High,7.5,the CLI refuses this check at a commit
+Scorecard,Webhooks,none,Critical,10.0,current settings; the CLI refuses this check at a commit
+Scorecard,Fuzzing,none,Medium,5.0,the CLI refuses this check at a commit
+Scorecard,Packaging,none,Medium,5.0,the CLI refuses this check at a commit
+Scorecard,SAST,none,Medium,5.0,the CLI refuses this check at a commit
+Scorecard,SBOM,none,Medium,5.0,the CLI refuses this check at a commit
+Scorecard,CII-Best-Practices,none,Low,2.5,current badge state; the CLI refuses this check at a commit
+Scorecard,Contributors,none,Low,2.5,current organisations; the CLI refuses this check at a commit
+CrOSSD,maturity_level,recorded,,,"stored value, dated by its reading"
+CrOSSD,support_rate,recorded,,,"stored value, dated by its reading"
+CrOSSD,project_velocity,recorded,,,"stored value, dated by its reading"
+CrOSSD,bus_factor,recorded,,,"stored value, dated by its reading"
+CrOSSD,elephant_factor,recorded,,,"stored value, dated by its reading"
+CrOSSD,community_health,recorded,,,"stored value, dated by its reading"
+CrOSSD,criticality_score,recorded,,,"stored value, dated by its reading"
+Criticality Score,published score,recorded,,,"last list before t0, from the project's BigQuery table"
+Criticality Score,created_since,rebuilt,,,"createdAt, or the first commit if recreated"
+Criticality Score,updated_since,rebuilt,,,git
+Criticality Score,contributor_count,rebuilt,,,"git authors, today's default branch"
+Criticality Score,commit_frequency,rebuilt,,,git
+Criticality Score,recent_releases_count,rebuilt,,,dated releases
+Criticality Score,closed_issues_count,rebuilt,,,search by closing date
+Criticality Score,updated_issues_count,partial,,,"created or commented in the window, capped at 100 issues"
+Criticality Score,comment_frequency,partial,,,capped at 100 issues
+Criticality Score,dependents_count,partial,,,CrOSSD value at t0 in the place of mentions in commit messages
+Criticality Score,org_count,none,,,current organisations
+openCode maintenance,commits in 6 months,rebuilt,,,git
+openCode maintenance,mean issue response,rebuilt,,,dated issues and comments
+openCode maintenance,release or tag in 6 months,rebuilt,,,dated releases and tags
+openCode maintenance,contributor absence factor,rebuilt,,,git
+openCode security,mean issue response,rebuilt,,,dated issues and comments
+openCode security,SECURITY.md,rebuilt,,,tree at the commit
+openCode security,reviewed merges,partial,,,dated reviews; association read today
+openCode security,signed tags,rebuilt,,,tag objects
+openCode security,branch protection,none,,,current settings
+openCode security,force pushes,none,,,current settings
+openCode security,vulnerability criteria,none,,,advisory data is backfilled; level 3 stays out

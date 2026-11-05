@@ -1,0 +1,16 @@
+{
+  "generated": "2026-11-03T13:17:42.448677+00:00",
+  "P1_workflow_runs": {
+    "workflow_runs_checked": 110795,
+    "later_than_block_timestamp": 0,
+    "worst_excess_days": 0.0
+  },
+  "P2_repo_payload": {
+    "snapshots_sampled": 40,
+    "fetch_failures": 0,
+    "date_fields_checked": 264302,
+    "later_than_metrics_timestamp": 0,
+    "worst_excess_days": 0.0,
+    "paths_with_later_dates": {}
+  }
+}

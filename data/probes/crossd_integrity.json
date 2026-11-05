@@ -1,0 +1,210 @@
+{
+  "generated": "2026-11-04T09:11:16.260767+00:00",
+  "R1": {
+    "bak_records": 15856,
+    "median_days": 2.27,
+    "p99_days": 38.23,
+    "max_days": 61.87,
+    "over_60_days": 1,
+    "negative": 0
+  },
+  "R2": {
+    "projects": 1943,
+    "neighbour_pairs_changed": 9927,
+    "neighbour_pairs_same": 3975,
+    "share_changed": 0.714,
+    "share_of_changes_upward": 0.414
+  },
+  "R3": {
+    "projects": 150,
+    "exact_match": 86,
+    "within_1pct_of_then": 130,
+    "recorded_above_then": 19,
+    "projects_that_grew_by_over_2pct": 108,
+    "of_those_closer_to_then": 108,
+    "median_error_to_then": 0.0003,
+    "median_error_to_late": 0.2254
+  },
+  "S1": {
+    "most_starred": {
+      "projects": 996,
+      "stars_today_quantiles": {
+        "0.0": 130,
+        "0.05": 25558,
+        "0.25": 31331,
+        "0.5": 40763,
+        "0.75": 61619,
+        "0.95": 139804
+      },
+      "under_10_stars": 0,
+      "forks": 0,
+      "created_first": "2008-04-11",
+      "created_last": "2024-03-17",
+      "created_after_list_date": 0,
+      "created_by_year": {
+        "2008": 3,
+        "2009": 13,
+        "2010": 40,
+        "2011": 48,
+        "2012": 56,
+        "2013": 87,
+        "2014": 98,
+        "2015": 112,
+        "2016": 122,
+        "2017": 88,
+        "2018": 88,
+        "2019": 69,
+        "2020": 56,
+        "2021": 36,
+        "2022": 30,
+        "2023": 48,
+        "2024": 2
+      }
+    },
+    "random_sample": {
+      "projects": 913,
+      "stars_today_quantiles": {
+        "0.0": 0,
+        "0.05": 16,
+        "0.25": 41,
+        "0.5": 164,
+        "0.75": 967,
+        "0.95": 12251
+      },
+      "under_10_stars": 9,
+      "forks": 3,
+      "created_first": "2009-09-11",
+      "created_last": "2026-10-25",
+      "created_after_list_date": 8,
+      "created_by_year": {
+        "2009": 1,
+        "2010": 3,
+        "2011": 14,
+        "2012": 19,
+        "2013": 28,
+        "2014": 24,
+        "2015": 35,
+        "2016": 35,
+        "2017": 38,
+        "2018": 77,
+        "2019": 68,
+        "2020": 136,
+        "2021": 125,
+        "2022": 141,
+        "2023": 131,
+        "2024": 33,
+        "2025": 2,
+        "2026": 3
+      }
+    }
+  },
+  "S2": {
+    "by_stars_quartile_at_t0": {
+      "q1": {
+        "no_bus": 0.099,
+        "no_crit": 0.06,
+        "n": 282
+      },
+      "q2": {
+        "no_bus": 0.199,
+        "no_crit": 0.018,
+        "n": 281
+      },
+      "q3": {
+        "no_bus": 0.217,
+        "no_crit": 0.004,
+        "n": 281
+      },
+      "q4": {
+        "no_bus": 0.149,
+        "no_crit": 0.011,
+        "n": 281
+      }
+    },
+    "by_commits_quartile_before_t0": {
+      "q1": {
+        "no_bus": 0.469,
+        "no_crit": 0.135,
+        "n": 422
+      },
+      "q2": {
+        "no_bus": 0.095,
+        "no_crit": 0.064,
+        "n": 422
+      },
+      "q3": {
+        "no_bus": 0.05,
+        "no_crit": 0.055,
+        "n": 421
+      },
+      "q4": {
+        "no_bus": 0.007,
+        "no_crit": 0.218,
+        "n": 422
+      }
+    },
+    "by_issues_in_window": {
+      "no data": {
+        "no_bus": 0.124,
+        "no_crit": 0.387,
+        "n": 137
+      },
+      "0": {
+        "no_bus": 0.256,
+        "no_crit": 0.537,
+        "n": 164
+      },
+      "1-9": {
+        "no_bus": 0.221,
+        "no_crit": 0.2,
+        "n": 280
+      },
+      "10-99": {
+        "no_bus": 0.263,
+        "no_crit": 0.005,
+        "n": 399
+      },
+      "100+": {
+        "no_bus": 0.051,
+        "no_crit": 0.0,
+        "n": 707
+      }
+    },
+    "by_stratum": {
+      "most_starred": {
+        "no_bus": 0.208,
+        "no_crit": 0.009,
+        "n": 780
+      },
+      "random_sample": {
+        "no_bus": 0.11,
+        "no_crit": 0.212,
+        "n": 907
+      }
+    },
+    "by_issues_enabled": {
+      "False": {
+        "no_bus": 0.125,
+        "no_crit": 0.385,
+        "n": 96
+      },
+      "True": {
+        "no_bus": 0.158,
+        "no_crit": 0.094,
+        "n": 1550
+      }
+    }
+  },
+  "S3": {
+    "random_projects": 961,
+    "last_snapshot_top": {
+      "2024-08-09": 940,
+      "2026-10-19": 4,
+      "2024-06-14": 4,
+      "2024-05-17": 3,
+      "2024-05-31": 2,
+      "2024-05-10": 2
+    },
+    "continued_after_2024_08_09": 4
+  }
+}

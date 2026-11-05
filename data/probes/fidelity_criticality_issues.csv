@@ -1,0 +1,12 @@
+statistic,value
+list_rows,585601.0
+list_zero_closed_issues_count,0.9461408023551873
+list_zero_updated_issues_count,0.9212689185981582
+list_zero_comment_frequency,0.9664754670842434
+list_all_three_zero,0.8949643187084722
+sample,150.0
+sample_zero_closed,0.9733333333333334
+rho_rebuilt,0.9029325747811013
+mad_rebuilt,0.08678059840160382
+rho_issue_as_published,0.9260767145206453
+mad_issue_as_published,0.053844615782638855

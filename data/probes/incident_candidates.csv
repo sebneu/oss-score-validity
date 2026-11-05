@@ -1,0 +1,319 @@
+kind,project,advisory,cve,package,ecosystem,published,kev_added,in_range,name,stars_t0,in_cohort,list,snapshots,monitored_from,monitored_to
+archived,DopplerHQ/awesome-interview-questions,,,,,2024-07-29,,,,69401.0,False,most_starred,96,2024-04-14,2026-10-19
+archived,sdmg15/Best-websites-a-programmer-should-visit,,,,,2025-11-01,,,,60097.0,True,most_starred,94,2024-04-14,2026-10-19
+archived,angular/angular.js,,,,,2024-04-12,,,,58882.0,False,most_starred,91,2024-04-14,2026-10-19
+archived,localstack/localstack,,,,,2026-03-23,,,,53194.0,True,most_starred,90,2024-04-14,2026-10-19
+archived,gpt-engineer-org/gpt-engineer,,,,,2026-04-22,,,,51482.0,True,most_starred,90,2024-04-14,2026-10-19
+archived,iperov/DeepFaceLab,,,,,2024-11-13,,,,46418.0,False,most_starred,83,2024-04-14,2026-10-19
+archived,minio/minio,,,,,2026-04-25,,,,45786.0,True,most_starred,94,2024-04-14,2026-10-19
+archived,google-research/bert,,,,,2025-09-25,,,,37545.0,False,most_starred,89,2024-04-14,2026-10-19
+archived,pocketbase/pocketbase,,,,,2026-10-26,,,,36612.0,True,most_starred,95,2024-04-14,2026-10-19
+archived,dylanaraps/pure-bash-bible,,,,,2024-04-26,,,,36320.0,False,most_starred,93,2024-04-14,2026-10-19
+archived,slatedocs/slate,,,,,2026-02-04,,,,35969.0,False,most_starred,91,2024-04-14,2026-10-19
+archived,openai/gym,,,,,2026-04-08,,,,34303.0,False,most_starred,91,2024-04-14,2026-10-19
+archived,atlassian/react-beautiful-dnd,,,,,2025-08-18,,,,32904.0,True,most_starred,97,2024-04-14,2026-10-19
+archived,alibaba/easyexcel,,,,,2025-09-04,,,,31573.0,True,most_starred,96,2024-04-14,2026-10-19
+archived,Chanzhaoyu/chatgpt-web,,,,,2025-02-10,,,,31056.0,True,most_starred,95,2024-04-14,2026-10-19
+archived,blueimp/jQuery-File-Upload,,,,,2026-04-08,,,,30968.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,reworkd/AgentGPT,,,,,2026-01-28,,,,30890.0,True,most_starred,86,2024-04-14,2026-10-19
+archived,Binaryify/NeteaseCloudMusicApi,,,,,2024-04-16,,,,30270.0,False,most_starred,91,2024-04-14,2026-10-19
+archived,facebookresearch/fairseq,,,,,2026-03-20,,,,29881.0,True,most_starred,95,2024-04-14,2026-10-19
+archived,herrbischoff/awesome-macos-command-line,,,,,2026-03-04,,,,28683.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,FlowiseAI/Flowise,,,,,2026-08-13,,,,28036.0,True,most_starred,85,2024-04-14,2026-10-19
+archived,Homebrew/legacy-homebrew,,,,,2025-01-16,,,,27010.0,False,most_starred,105,2024-04-14,2026-10-19
+archived,codemirror/codemirror5,,,,,2026-04-16,,,,26696.0,True,most_starred,96,2024-04-14,2026-10-19
+archived,nvie/gitflow,,,,,2025-10-14,,,,26593.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,s0md3v/roop,,,,,2026-05-17,,,,25821.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,alibaba/fastjson,,,,,2026-07-29,,,,25685.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,spipm/Depix,,,,,2026-04-14,,,,25495.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,filebrowser/filebrowser,,,,,2026-08-31,,,,25019.0,True,most_starred,95,2024-04-14,2026-10-19
+archived,proxyee-down-org/proxyee-down,,,,,2024-07-30,,,,24948.0,False,most_starred,95,2024-04-14,2026-10-19
+archived,nylas/nylas-mail,,,,,2026-06-25,,,,24793.0,False,most_starred,90,2024-04-14,2026-10-19
+archived,inconshreveable/ngrok,,,,,2024-06-03,,,,24089.0,False,most_starred,88,2024-04-29,2026-10-19
+archived,doczjs/docz,,,,,2025-11-21,,,,23559.0,False,most_starred,89,2024-04-14,2026-10-19
+archived,android/architecture-components-samples,,,,,2025-01-10,,,,23370.0,False,most_starred,87,2024-04-14,2026-10-19
+archived,mozilla/DeepSpeech,,,,,2025-06-19,,,,14644.0,False,most_starred,95,2024-04-14,2026-10-19
+archived,mongodb/mongodb-kubernetes-operator,,,,,2025-12-12,,,,1183.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,rigdev/rig,,,,,2025-03-24,,,,1024.0,True,random_sample,16,2024-04-17,2024-08-09
+archived,jhipster/jhipster-lite,,,,,2025-08-04,,,,437.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,amadeus4dev/amadeus-python,,,,,2026-07-17,,,,191.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,SimonCropp/XunitContext,,,,,2026-02-11,,,,159.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,codemirror/view,,,,,2026-04-15,,,,108.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,symbiosis-finance/js-sdk,,,,,2026-07-06,,,,22.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,1024pix/pix-ui,,,,,2026-09-29,,,,15.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,devoxa/paddle-sdk,,,,,2024-11-26,,,,14.0,True,random_sample,17,2024-04-17,2024-08-09
+archived,AdroitAdorKhan/antipopads-re,,,,,2025-03-06,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,AreaLayer/FireBolt,,,,,2024-09-19,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,KaOSx/apps,,,,,2024-11-29,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,Linaro/website,,,,,2024-06-12,,,,,False,random_sample,17,2024-04-17,2024-08-09
+archived,List-KR/microShield,,,,,2024-12-12,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,YieldLabs/quant,,,,,2024-11-25,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,anaclumos/heimdall,,,,,2025-04-23,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,base-org/node,,,,,2026-09-08,,,,,True,most_starred,90,2024-04-14,2026-10-19
+archived,cosmostation/chainlist,,,,,2026-07-01,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,dogokit/dogokit-remix,,,,,2025-06-21,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,element-hq/element-desktop,,,,,2026-03-25,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,fluencelabs/js-client,,,,,2025-07-10,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,hmcts/vh-video-web,,,,,2025-06-26,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,im-razvan/proxy_list,,,,,2025-01-03,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,ismartcoding/currency-api,,,,,2025-07-27,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,juthilo/run-jekyll-on-windows,,,,,2024-04-09,,,,,False,random_sample,17,2024-04-17,2024-08-09
+archived,maybe-finance/maybe,,,,,2025-07-27,,,,,True,most_starred,95,2024-04-14,2026-10-19
+archived,metis-os/hysp-pkgs,,,,,2024-06-20,,,,,False,random_sample,17,2024-04-17,2024-08-09
+archived,mui/mui-toolpad,,,,,2026-09-23,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,okineadev/dotload,,,,,2026-03-29,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,opentofu/manifesto,,,,,2026-05-13,,,,,True,most_starred,95,2024-04-14,2026-10-19
+archived,puddingspudding/just-the-dip,,,,,2025-01-29,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,sanity-io/sanity-plugin-internationalized-array,,,,,2026-02-03,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,simonw/scrape-instances-social,,,,,2025-01-04,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,tsuki-lab/microcms-ts-sdk,,,,,2026-10-22,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,vijay6672/YT2M3U,,,,,2025-05-09,,,,,True,random_sample,17,2024-04-17,2024-08-09
+archived,wKovacs64/pwl,,,,,2025-10-18,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,GrowingGit/GitHub-Chinese-Top-Charts,,,,,,,,,96100.0,True,most_starred,65,2024-04-14,2026-06-22
+gone,Alvin9999/new-pac,,,,,,,,,53464.0,True,most_starred,66,2024-04-14,2025-09-22
+gone,iamadamdev/bypass-paywalls-chrome,,,,,,,,,48115.0,True,most_starred,15,2024-04-14,2024-08-05
+gone,Stability-AI/stablediffusion,,,,,,,,,37783.0,True,most_starred,66,2024-04-14,2025-09-22
+gone,Ryujinx/Ryujinx,,,,,,,,,33798.0,True,most_starred,21,2024-04-14,2024-09-30
+gone,Awesome-Windows/Awesome,,,,,,,,,28278.0,True,most_starred,17,2024-04-14,2024-09-02
+gone,datastrato/gravitino,,,,,,,,,764.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,adminlove520/Poc-Monitor_v1.0.1,,,,,,,,,129.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,Vonage/vivid-3,,,,,,,,,50.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,Energinet-DataHub/energy-origin,,,,,,,,,15.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,Tony133/nestjs-mongodb-driver,,,,,,,,,11.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,wjwillemse/solvency2-data,,,,,,,,,10.0,True,random_sample,17,2024-04-17,2024-08-09
+gone,0x3EF8/Hexabot,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,COSD-PANDA/seaboard,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,DefiLlama/defillama-server,,,,,,,,,,True,random_sample,14,2024-04-17,2024-08-09
+gone,Epodonios/v2ray-configs,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,FaithZL/Vision,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,Haruzona/penguinDotfiles,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,Kawa1sk/Email-Bomber-SMTP,,,,,,,,,,False,added_later,1,2024-04-02,2024-04-02
+gone,KoreanThinker/billboard-json,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,LemonYT/CamtasiaStudioFullEdition,,,,,,,,,,False,random_sample,7,2024-04-17,2024-05-31
+gone,NotUnko/autoproxies,,,,,,,,,,False,random_sample,5,2024-04-17,2024-05-17
+gone,PAULOSTON/Dll-Injector-V4,,,,,,,,,,False,random_sample,9,2024-04-17,2024-06-14
+gone,Protofy-xyz/Protofy,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,Rabios/Rabios,,,,,,,,,,False,random_sample,2,2024-04-17,2024-04-26
+gone,TheRealToxicDev/StatusPage,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,Wikia/ad-engine,,,,,,,,,,False,random_sample,7,2024-04-17,2024-05-31
+gone,caliwyr/Software,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,dataapiman/data-api,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,department-of-veterans-affairs/va.gov-team,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,duty-machine/news,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,dutymachine/news,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,hkpc/V2ray-Configs,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,ipfire/ipfire-2.x,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,ipstreet312/freeiptv,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,jenz69fvas/Evon-Executor,,,,,,,,,,False,random_sample,9,2024-04-17,2024-06-14
+gone,l1nky-1337/PasterX-Updated,,,,,,,,,,False,random_sample,1,2024-04-02,2024-04-02
+gone,likhonofficial/Flash-USDT,,,,,,,,,,True,random_sample,15,2024-04-17,2024-07-26
+gone,nhcarrigan/weLoveHacktoberfest,,,,,,,,,,False,random_sample,3,2024-04-17,2024-05-10
+gone,otavepto/gbe_fork,,,,,,,,,,False,random_sample,13,2024-04-17,2024-07-12
+gone,p1ay8y3ar/cve_monitor,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,qitoqito/kedaya,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,rphlr/42-Evals,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,shangziqi/gitHub520,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,stanlyshi/tvbox-cfg,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,tata-chka/verified-tor-sites,,,,,,,,,,False,random_sample,5,2024-04-17,2024-05-17
+gone,tobojah/darkweb-now,,,,,,,,,,False,random_sample,6,2024-04-17,2024-05-24
+gone,voloviktarasewu/darkweb-tourism,,,,,,,,,,False,random_sample,5,2024-04-17,2024-05-17
+gone,w296488320/nativeLib,,,,,,,,,,False,random_sample,12,2024-04-17,2024-07-05
+gone,yebekhe/MTProtoCollector,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,yebekhe/SSTPCollector,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,yebekhe/TVC,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,yebekhe/TelegramV2rayCollector,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,yebekhe/cf-clean-ip-resolver,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+gone,yemixzy/proxy-list,,,,,,,,,,True,random_sample,17,2024-04-17,2024-08-09
+kev,facebook/react,GHSA-fv66-9v8q-g76r,CVE-2025-55182,react-server-dom-webpack,npm,2025-12-03,2025-12-05,False,Meta React Server Components Remote Code Execution Vulnerability,225704.0,True,most_starred,103,2024-04-14,2026-10-19
+kev,vercel/next.js,CVE-2025-55182,CVE-2025-55182,,,2025-12-03,2025-12-05,True,Meta React Server Components Remote Code Execution Vulnerability,123528.0,True,most_starred,125,2024-04-14,2026-10-19
+kev,electron/electron,PYSEC-2026-1794,CVE-2023-4863,pillow,PyPI,2026-07-07,2023-09-13,False,Google Chromium WebP Heap-Based Buffer Overflow Vulnerability,113015.0,True,most_starred,90,2024-04-02,2026-10-19
+kev,nodejs/node,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,105600.0,True,most_starred,98,2024-04-14,2026-10-19
+kev,oven-sh/bun,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,72289.0,True,most_starred,79,2024-04-14,2026-10-19
+kev,vitejs/vite,GHSA-4r4m-qw57-chr8,CVE-2025-31125,vite,npm,2025-03-31,2026-01-22,False,Vite Vitejs Improper Access Control Vulnerability,66315.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,vitejs/vite,CVE-2025-31125,CVE-2025-31125,,,2025-03-31,2026-01-22,True,Vite Vitejs Improper Access Control Vulnerability,66315.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,apache/superset,PYSEC-2026-1161,CVE-2023-27524,apache-superset,PyPI,2026-07-07,2024-01-08,False,Apache Superset Insecure Default Initialization of Resource Vulnerabil,60858.0,True,most_starred,103,2024-04-14,2026-10-19
+kev,git/git,CVE-2025-48384,CVE-2025-48384,,,2025-07-08,2025-08-25,True,Git Link Following Vulnerability,51206.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,gogs/gogs,GHSA-mq8m-42gh-wq7r,CVE-2025-8110,gogs.io/gogs,Go,2025-12-10,2026-01-12,False,Gogs Path Traversal Vulnerability,44606.0,True,most_starred,93,2024-04-14,2026-10-19
+kev,gogs/gogs,CVE-2025-8110,CVE-2025-8110,,,2025-12-10,2026-01-12,True,Gogs Path Traversal Vulnerability,44606.0,True,most_starred,93,2024-04-14,2026-10-19
+kev,go-gitea/gitea,GHSA-rcr6-4jqh-j84m,CVE-2026-60004,gitea.dev,Go,2026-09-08,2026-08-25,False,Gitea Code Injection Vulnerability,43396.0,True,most_starred,95,2024-04-14,2026-10-19
+kev,go-gitea/gitea,GO-2026-6433,CVE-2026-60004,code.gitea.io/gitea,Go,2026-09-10,2026-08-25,False,Gitea Code Injection Vulnerability,43396.0,True,most_starred,95,2024-04-14,2026-10-19
+kev,go-gitea/gitea,CVE-2026-60004,CVE-2026-60004,,,2026-08-26,2026-08-25,True,Gitea Code Injection Vulnerability,43396.0,True,most_starred,95,2024-04-14,2026-10-19
+kev,n8n-io/n8n,GHSA-v98v-ff95-f3cp,CVE-2025-68613,n8n,npm,2025-12-22,2026-03-11,False,n8n Improper Control of Dynamically-Managed Code Resources Vulnerabili,42960.0,True,most_starred,125,2024-04-14,2026-10-19
+kev,n8n-io/n8n,CVE-2025-68613,CVE-2025-68613,,,2025-12-19,2026-03-11,True,n8n Improper Control of Dynamically-Managed Code Resources Vulnerabili,42960.0,True,most_starred,125,2024-04-14,2026-10-19
+kev,php/php-src,CVE-2024-4577,CVE-2024-4577,,,2024-06-09,2024-06-12,True,PHP-CGI OS Command Injection Vulnerability,37687.0,True,most_starred,91,2024-04-14,2026-10-19
+kev,ClickHouse/ClickHouse,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,35712.0,True,most_starred,92,2024-04-14,2026-10-14
+kev,istio/istio,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,35458.0,True,most_starred,93,2024-04-14,2026-10-19
+kev,rapid7/metasploit-framework,CVE-2024-11680,CVE-2024-11680,,,2024-11-26,2024-12-03,False,ProjectSend Improper Authentication Vulnerability,33404.0,True,most_starred,96,2024-04-14,2026-10-19
+kev,rapid7/metasploit-framework,CVE-2024-4577,CVE-2024-4577,,,2024-06-09,2024-06-12,False,PHP-CGI OS Command Injection Vulnerability,33404.0,True,most_starred,96,2024-04-14,2026-10-19
+kev,rapid7/metasploit-framework,CVE-2026-97229,CVE-2026-97229,,,2026-10-13,2026-10-29,False,GitLab Community Edition and Enterprise Edition Integer Overflow or Wr,33404.0,True,most_starred,96,2024-04-14,2026-10-19
+kev,ray-project/ray,GHSA-q279-jhrf-cc6v,CVE-2025-62593,ray,PyPI,2025-11-26,2026-08-17,False,Ray-Project Ray Code Injection Vulnerability,32232.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,ray-project/ray,PYSEC-2026-520,CVE-2025-62593,ray,PyPI,2026-06-29,2026-08-17,False,Ray-Project Ray Code Injection Vulnerability,32232.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,ray-project/ray,CVE-2025-62593,CVE-2025-62593,,,2025-11-26,2026-08-17,True,Ray-Project Ray Code Injection Vulnerability,32232.0,True,most_starred,94,2024-04-14,2026-10-19
+kev,mongodb/mongo,CVE-2025-14847,CVE-2025-14847,,,2025-12-19,2025-12-29,True,MongoDB and MongoDB Server Improper Handling of Length Parameter Incon,25852.0,True,most_starred,91,2024-04-14,2026-10-19
+kev,envoyproxy/envoy,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,24356.0,True,most_starred,88,2024-04-14,2026-10-19
+kev,v8/v8,CVE-2026-85046,CVE-2026-85046,,,2026-09-03,2026-09-04,True,Google Chromium V8 Type Confusion Vulnerability,23017.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,duckdb/duckdb,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,21178.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,projectdiscovery/nuclei-templates,CVE-2024-11680,CVE-2024-11680,,,2024-11-26,2024-12-03,False,ProjectSend Improper Authentication Vulnerability,8731.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,kestra-io/kestra,CVE-2026-49869,CVE-2026-49869,,,2026-06-26,2026-09-02,True,Kestra OSS OS Command Injection Vulnerability,7165.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,geoserver/geoserver,GHSA-6jj6-gm7p-fcvv,CVE-2024-36401,org.geoserver.web:gs-web-app,Maven,2024-07-01,2024-07-15,False,OSGeo GeoServer GeoTools Eval Injection Vulnerability,3708.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,geoserver/geoserver,GHSA-fjf5-xgmq-5525,CVE-2025-58360,org.geoserver.web:gs-web-app,Maven,2025-11-25,2025-12-11,False,OSGeo GeoServer Improper Restriction of XML External Entity Reference ,3708.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,geoserver/geoserver,CVE-2024-36401,CVE-2024-36401,,,2024-07-01,2024-07-15,True,OSGeo GeoServer GeoTools Eval Injection Vulnerability,3708.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,geoserver/geoserver,CVE-2025-58360,CVE-2025-58360,,,2025-11-25,2025-12-11,True,OSGeo GeoServer Improper Restriction of XML External Entity Reference ,3708.0,True,random_sample,17,2024-04-17,2024-08-09
+kev,prettier/eslint-plugin-prettier,GHSA-f29h-pxvx-f335,CVE-2025-54313,eslint-config-prettier,npm,2025-07-19,2026-01-22,False,Prettier eslint-config-prettier Embedded Malicious Code Vulnerability,,False,added_later,20,2026-04-27,2026-10-19
+kev,prettier/eslint-config-prettier,GHSA-f29h-pxvx-f335,CVE-2025-54313,eslint-config-prettier,npm,2025-07-19,2026-01-22,False,Prettier eslint-config-prettier Embedded Malicious Code Vulnerability,,False,added_later,20,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,GHSA-577h-p2hh-v4mv,CVE-2025-34291,langflow,PyPI,2025-12-06,2026-05-21,False,Langflow Origin Validation Error Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,GHSA-g22f-v6f7-2hrh,CVE-2026-0770,langflow,PyPI,2026-01-23,2026-07-21,False,Langflow Inclusion of Functionality from Untrusted Control Sphere Vuln,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,GHSA-qrpv-q767-xqq2,CVE-2026-55255,langflow,PyPI,2026-06-19,2026-07-07,False,Langflow Authorization Bypass Through User-Controlled Key Vulnerabilit,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,GHSA-rvqx-wpfh-mfx7,CVE-2025-3248,langflow,PyPI,2025-06-17,2025-05-05,False,Langflow Missing Authentication Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,GHSA-vwmf-pq79-vjvx,CVE-2026-33017,langflow,PyPI,2026-03-17,2026-03-25,False,Langflow Code Injection Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,PYSEC-2025-36,CVE-2025-3248,langflow,PyPI,2025-04-07,2025-05-05,False,Langflow Missing Authentication Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,PYSEC-2025-78,CVE-2025-34291,langflow,PyPI,2025-12-05,2026-05-21,False,Langflow Origin Validation Error Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,PYSEC-2026-1525,CVE-2026-0770,langflow,PyPI,2026-07-07,2026-07-21,False,Langflow Inclusion of Functionality from Untrusted Control Sphere Vuln,,False,added_later,39,2026-04-27,2026-10-19
+kev,python-pillow/Pillow,PYSEC-2026-1794,CVE-2023-4863,pillow,PyPI,2026-07-07,2023-09-13,False,Google Chromium WebP Heap-Based Buffer Overflow Vulnerability,,False,added_later,19,2026-04-27,2026-10-14
+kev,langflow-ai/langflow,PYSEC-2026-221,CVE-2026-55255,langflow,PyPI,2026-06-23,2026-07-07,False,Langflow Authorization Bypass Through User-Controlled Key Vulnerabilit,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,PYSEC-2026-379,CVE-2026-33017,langflow,PyPI,2026-06-29,2026-03-25,False,Langflow Code Injection Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,langflow-ai/langflow,PYSEC-2026-380,CVE-2025-3248,langflow-base,PyPI,2026-06-29,2025-05-05,False,Langflow Missing Authentication Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,apache/tomcat,GHSA-69r9-qgr7-g2wj,CVE-2026-34486,org.apache.tomcat:tomcat-tribes,Maven,2026-04-09,2026-08-04,False,Apache Tomcat Missing Encryption of Sensitive Data Vulnerability,,False,added_later,21,2026-04-27,2026-10-19
+kev,apache/tomcat,GHSA-83qj-6fr2-vhqg,CVE-2025-24813,org.apache.tomcat:tomcat-catalina,Maven,2025-03-10,2025-04-01,False,Apache Tomcat Path Equivalence Vulnerability,,False,added_later,21,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2024-11680,CVE-2024-11680,,,2024-11-26,2024-12-03,False,ProjectSend Improper Authentication Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-27348,CVE-2024-27348,,,2024-04-22,2024-09-18,False,Apache HugeGraph-Server Improper Access Control Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-27443,CVE-2024-27443,,,2024-08-12,2025-05-19,False,Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting (XSS) Vu,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-32113,CVE-2024-32113,,,2024-05-08,2024-08-07,False,Apache OFBiz Path Traversal Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-34102,CVE-2024-34102,,,2024-06-13,2024-07-17,False,Adobe Commerce and Magento Open Source Improper Restriction of XML Ext,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-36401,CVE-2024-36401,,,2024-07-01,2024-07-15,False,OSGeo GeoServer GeoTools Eval Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-36971,CVE-2024-36971,,,2024-06-10,2024-08-07,False,Android Kernel Remote Code Execution Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-37383,CVE-2024-37383,,,2024-06-07,2024-10-24,False,RoundCube Webmail Cross-Site Scripting (XSS) Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-38475,CVE-2024-38475,,,2024-07-01,2025-05-01,False,Apache HTTP Server Improper Escaping of Output Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-38856,CVE-2024-38856,,,2024-08-05,2024-08-27,False,Apache OFBiz Incorrect Authorization Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-42009,CVE-2024-42009,,,2024-08-05,2025-06-09,False,RoundCube Webmail Cross-Site Scripting Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-45195,CVE-2024-45195,,,2024-09-04,2025-02-04,False,Apache OFBiz Forced Browsing Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-45519,CVE-2024-45519,,,2024-10-02,2024-10-03,False,Synacor Zimbra Collaboration Suite (ZCS) Command Execution Vulnerabili,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-4577,CVE-2024-4577,,,2024-06-09,2024-06-12,False,PHP-CGI OS Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-50302,CVE-2024-50302,,,2024-11-19,2025-03-04,False,Linux Kernel Use of Uninitialized Resource Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-51378,CVE-2024-51378,,,2024-10-29,2024-12-04,False,CyberPanel Incorrect Default Permissions Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-51567,CVE-2024-51567,,,2024-10-29,2024-11-07,False,CyberPanel Incorrect Default Permissions Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-53104,CVE-2024-53104,,,2024-12-02,2025-02-05,False,Linux Kernel Out-of-Bounds Write Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-53150,CVE-2024-53150,,,2024-12-24,2025-04-09,False,Linux Kernel Out-of-Bounds Read Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-53197,CVE-2024-53197,,,2024-12-27,2025-04-09,False,Linux Kernel Out-of-Bounds Access Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-56145,CVE-2024-56145,,,2024-12-18,2025-06-02,False,Craft CMS Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2024-58136,CVE-2024-58136,,,2025-04-10,2025-05-02,False,Yiiframework Yii Improper Protection of Alternate Path Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-11953,CVE-2025-11953,,,2025-11-03,2026-02-05,False,React Native Community CLI OS Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-14847,CVE-2025-14847,,,2025-12-19,2025-12-29,False,MongoDB and MongoDB Server Improper Handling of Length Parameter Incon,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-15556,CVE-2025-15556,,,2026-02-03,2026-02-12,False,Notepad++ Download of Code Without Integrity Check Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-23209,CVE-2025-23209,,,2025-01-18,2025-02-20,False,Craft CMS Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-24016,CVE-2025-24016,,,2025-02-10,2025-06-10,False,Wazuh Server Deserialization of Untrusted Data Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,apache/tomcat,CVE-2025-24813,CVE-2025-24813,,,2025-03-10,2025-04-01,True,Apache Tomcat Path Equivalence Vulnerability,,False,added_later,21,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2025-24813,CVE-2025-24813,,,2025-03-10,2025-04-01,False,Apache Tomcat Path Equivalence Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-24893,CVE-2025-24893,,,2025-02-20,2025-10-30,False,XWiki Platform Eval Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-27363,CVE-2025-27363,,,2025-03-11,2025-05-06,False,FreeType Out-of-Bounds Write Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-27915,CVE-2025-27915,,,2025-03-12,2025-10-07,False,Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerab,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-30066,CVE-2025-30066,,,2025-03-15,2025-03-18,False,tj-actions/changed-files GitHub Action Embedded Malicious Code Vulnera,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-30154,CVE-2025-30154,,,2025-03-19,2025-03-24,False,reviewdog/action-setup GitHub Action Embedded Malicious Code Vulnerabi,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-31125,CVE-2025-31125,,,2025-03-31,2026-01-22,False,Vite Vitejs Improper Access Control Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-32432,CVE-2025-32432,,,2025-04-25,2026-03-20,False,Craft CMS Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-32433,CVE-2025-32433,,,2025-04-16,2025-06-09,False,Erlang Erlang/OTP SSH Server Missing Authentication for Critical Funct,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-32463,CVE-2025-32463,,,2025-06-30,2025-09-29,False,Sudo Inclusion of Functionality from Untrusted Control Sphere Vulnerab,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2025-3248,CVE-2025-3248,,,2025-04-07,2025-05-05,True,Langflow Missing Authentication Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2025-3248,CVE-2025-3248,,,2025-04-07,2025-05-05,False,Langflow Missing Authentication Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2025-34291,CVE-2025-34291,,,2025-12-05,2026-05-21,True,Langflow Origin Validation Error Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2025-34291,CVE-2025-34291,,,2025-12-05,2026-05-21,False,Langflow Origin Validation Error Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-35939,CVE-2025-35939,,,2025-05-07,2025-06-02,False,Craft CMS External Control of Assumed-Immutable Web Parameter Vulnerab,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-38352,CVE-2025-38352,,,2025-07-22,2025-09-04,False,Linux Kernel Time-of-Check Time-of-Use (TOCTOU) Race Condition Vulnera,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-39682,CVE-2025-39682,,,2025-09-05,2026-09-18,False,Linux Kernel Improper Check for Unusual or Exceptional Conditions Vuln,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-39964,CVE-2025-39964,,,2025-10-13,2026-09-18,False,Linux Kernel Race Condition Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-48384,CVE-2025-48384,,,2025-07-08,2025-08-25,False,Git Link Following Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-48700,CVE-2025-48700,,,2025-06-23,2026-04-20,False,Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerab,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-49113,CVE-2025-49113,,,2025-06-02,2026-02-20,False,RoundCube Webmail Deserialization of Untrusted Data Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-54068,CVE-2025-54068,,,2025-07-17,2026-03-20,False,Laravel Livewire Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-54236,CVE-2025-54236,,,2025-09-09,2025-10-24,False,Adobe Commerce and Magento Improper Input Validation Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,prettier/eslint-config-prettier,CVE-2025-54313,CVE-2025-54313,,,2025-07-19,2026-01-22,False,Prettier eslint-config-prettier Embedded Malicious Code Vulnerability,,False,added_later,20,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2025-54313,CVE-2025-54313,,,2025-07-19,2026-01-22,False,Prettier eslint-config-prettier Embedded Malicious Code Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-57819,CVE-2025-57819,,,2025-08-28,2025-08-29,False,Sangoma FreePBX Authentication Bypass Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-58360,CVE-2025-58360,,,2025-11-25,2025-12-11,False,OSGeo GeoServer Improper Restriction of XML External Entity Reference ,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-62593,CVE-2025-62593,,,2025-11-26,2026-08-17,False,Ray-Project Ray Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-64328,CVE-2025-64328,,,2025-11-07,2026-02-03,False,Sangoma FreePBX OS Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-66376,CVE-2025-66376,,,2026-01-05,2026-03-18,False,Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting Vulnerab,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-68461,CVE-2025-68461,,,2025-12-18,2026-02-20,False,RoundCube Webmail Cross-site Scripting Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-68613,CVE-2025-68613,,,2025-12-19,2026-03-11,False,n8n Improper Control of Dynamically-Managed Code Resources Vulnerabili,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2025-68645,CVE-2025-68645,,,2025-12-22,2026-01-22,False,Synacor Zimbra Collaboration Suite (ZCS) PHP Remote File Inclusion Vul,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2026-0770,CVE-2026-0770,,,2026-01-23,2026-07-21,True,Langflow Inclusion of Functionality from Untrusted Control Sphere Vuln,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-0770,CVE-2026-0770,,,2026-01-23,2026-07-21,False,Langflow Inclusion of Functionality from Untrusted Control Sphere Vuln,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-102490,CVE-2026-102490,,,2026-09-30,2026-10-02,False,Zammad GmbH Zammad Improper Privilege Management Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-110447,CVE-2026-110447,,,2026-10-14,2026-10-23,False,Collabora Online – Built-in CODE Server OS Command Injection Vulnerabi,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,False,Google Brotli Unchecked Return Value Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,apache/arrow,CVE-2026-111497,CVE-2026-111497,,,2026-10-22,2026-10-27,True,Google Brotli Unchecked Return Value Vulnerability,,False,added_later,21,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-31431,CVE-2026-31431,,,2026-04-22,2026-05-01,False,Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2026-33017,CVE-2026-33017,,,2026-03-20,2026-03-25,True,Langflow Code Injection Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-33017,CVE-2026-33017,,,2026-03-20,2026-03-25,False,Langflow Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-33634,CVE-2026-33634,,,2026-03-23,2026-03-26,False,Aquasecurity Trivy Embedded Malicious Code Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-34197,CVE-2026-34197,,,2026-04-07,2026-04-16,False,Apache ActiveMQ Improper Input Validation Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,apache/tomcat,CVE-2026-34486,CVE-2026-34486,,,2026-04-09,2026-08-04,True,Apache Tomcat Missing Encryption of Sensitive Data Vulnerability,,False,added_later,21,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-34486,CVE-2026-34486,,,2026-04-09,2026-08-04,False,Apache Tomcat Missing Encryption of Sensitive Data Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-39987,CVE-2026-39987,,,2026-04-09,2026-04-23,False,Marimo Remote Code Execution Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-42208,CVE-2026-42208,,,2026-05-08,2026-05-08,False,BerriAI LiteLLM SQL Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-42271,CVE-2026-42271,,,2026-05-08,2026-06-08,False,BerriAI LiteLLM Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-45321,CVE-2026-45321,,,2026-05-12,2026-05-27,False,TanStack Unspecified Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-46300,CVE-2026-46300,,,2026-05-23,2026-10-28,False,Linux Kernel Missing Initialization of a Variable Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-48027,CVE-2026-48027,,,2026-05-27,2026-05-27,False,Nx Console Embedded Malicious Code Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-48356,CVE-2026-48356,,,2026-07-14,2026-10-27,False,Adobe Commerce and Magento Unrestricted Upload of File with Dangerous ,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-48710,CVE-2026-48710,,,2026-05-26,2026-09-02,False,Kludex Starlette HTTP Request/Response Smuggling Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-49869,CVE-2026-49869,,,2026-06-26,2026-09-02,False,Kestra OSS OS Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-53266,CVE-2026-53266,,,2026-06-25,2026-09-18,False,Linux Kernel Out-of-Bounds Write Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-53362,CVE-2026-53362,,,2026-07-04,2026-08-27,False,Linux Kernel Unspecified Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2026-55255,CVE-2026-55255,,,2026-06-23,2026-07-07,True,Langflow Authorization Bypass Through User-Controlled Key Vulnerabilit,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-55255,CVE-2026-55255,,,2026-06-23,2026-07-07,False,Langflow Authorization Bypass Through User-Controlled Key Vulnerabilit,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-59822,CVE-2026-59822,,,2026-07-08,2026-09-02,False,BerriAI LiteLLM Improper Authentication Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-60004,CVE-2026-60004,,,2026-08-26,2026-08-25,False,Gitea Code Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-64849,CVE-2026-64849,,,2026-08-17,2026-08-19,False,MLflow Server-Side Request Forgery Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-71362,CVE-2026-71362,,,2026-08-11,2026-09-24,False,Adobe Commerce and Magento Incorrect Authorization Vulnerability ,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-73570,CVE-2026-73570,,,2026-08-13,2026-08-21,False,Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-75650,CVE-2026-75650,,,2026-09-07,2026-09-08,False,Adobe Commerce and Magento Improper Neutralization of Special Elements,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-85046,CVE-2026-85046,,,2026-09-03,2026-09-04,False,Google Chromium V8 Type Confusion Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-85706,CVE-2026-85706,,,2026-09-12,2026-09-11,False,GitLab Community Edition and Enterprise Edition Path Traversal Vulnera,,True,random_sample,17,2024-04-17,2024-08-09
+kev,CVEProject/cvelistV5,CVE-2026-9082,CVE-2026-9082,,,2026-05-20,2026-05-22,False,Drupal Core SQL Injection Vulnerability,,True,random_sample,17,2024-04-17,2024-08-09
+kev,langflow-ai/langflow,CVE-2026-9198,CVE-2026-9198,,,2026-07-17,2026-08-04,True,IBM Langflow Code Injection Vulnerability,,False,added_later,39,2026-04-27,2026-10-19
+kev,CVEProject/cvelistV5,CVE-2026-97229,CVE-2026-97229,,,2026-10-13,2026-10-29,False,GitLab Community Edition and Enterprise Edition Integer Overflow or Wr,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,axios/axios,GHSA-658g-p7jg-wx5g,,@usebruno/cli,npm,2026-04-02,,False,,104756.0,True,most_starred,94,2024-04-14,2026-10-19
+malicious_code,Lightning-AI/pytorch-lightning,GHSA-w37p-236h-pfx3,,pytorch-lightning,PyPI,2026-05-07,,False,,27601.0,True,most_starred,93,2024-04-14,2026-10-19
+malicious_code,debug-js/debug,GHSA-286p-vc9p-p5qv,,color-string,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-4x49-vf9v-38px,,debug,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-53mq-f4w3-f7qv,,backslash,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-5fvm-p68v-5wmh,,color-name,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,colorjs/color-name,GHSA-5fvm-p68v-5wmh,,color-name,npm,2025-09-15,,False,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,usebruno/bruno,GHSA-658g-p7jg-wx5g,,@usebruno/cli,npm,2026-04-02,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,GHSA-6jp5-hh4c-8c5h,,error-ex,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,qix-/node-error-ex,GHSA-6jp5-hh4c-8c5h,,error-ex,npm,2025-09-15,,False,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-9g9j-rggx-7fmg,,simple-swizzle,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-frh7-2f84-v9mw,,is-arrayish,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,qix-/node-is-arrayish,GHSA-frh7-2f84-v9mw,,is-arrayish,npm,2025-09-15,,False,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-pxx3-g568-hxr4,,color-convert,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,Qix-/color-convert,GHSA-pxx3-g568-hxr4,,color-convert,npm,2025-09-15,,False,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,GHSA-qrmh-qg46-72pp,,color,npm,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-32965,,,,2025-04-22,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2025-59037,,,,2025-09-09,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59140,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59140,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59141,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59141,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59142,,,,2025-09-15,,True,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59142,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59143,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59143,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59144,,,,2025-09-15,,True,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59144,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59162,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,Qix-/color-convert,CVE-2025-59162,,,,2025-09-15,,True,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59162,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,debug-js/debug,CVE-2025-59330,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,qix-/node-error-ex,CVE-2025-59330,,,,2025-09-15,,True,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59330,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,qix-/node-is-arrayish,CVE-2025-59331,,,,2025-09-15,,True,,,False,added_later,20,2026-04-27,2026-10-19
+malicious_code,debug-js/debug,CVE-2025-59331,,,,2025-09-15,,False,,,False,added_later,21,2026-04-27,2026-10-19
+malicious_code,CVEProject/cvelistV5,CVE-2025-59331,,,,2025-09-15,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2025-8217,,,,2025-07-30,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-31976,,,,2026-03-11,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-48158,,,,2026-08-10,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-48159,,,,2026-08-10,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-48160,,,,2026-08-10,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-48161,,,,2026-08-10,,False,,,True,random_sample,17,2024-04-17,2024-08-09
+malicious_code,CVEProject/cvelistV5,CVE-2026-67595,,,,2026-07-29,,False,,,True,random_sample,17,2024-04-17,2024-08-09

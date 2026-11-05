@@ -1,0 +1,13 @@
+variant,events,known
+O1_12m,123,1687
+O1_dormant6m,329,1687
+O1_archived,209,1687
+O1_demand,158,1687
+O2b_12m,28,1687
+O2b_cvss9,22,1687
+O2b_drafted_30d,61,1687
+O1c_drafted,1188,1550
+O1c_external,1138,1550
+O1c_share_25,425,1068
+O1c_share_75,67,1068
+O1c_share_narrow,248,1068

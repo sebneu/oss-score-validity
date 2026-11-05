@@ -1,0 +1,73 @@
+project,label,component,value,share,peers,list
+axios/axios,axios,Bus factor,,,615,most_starred
+axios/axios,axios,Support rate,19.41423948220065,0.4067357512953368,772,most_starred
+axios/axios,axios,Maturity,80.0,0.7858974358974359,780,most_starred
+axios/axios,axios,Maintained,10.0,1.0,774,most_starred
+axios/axios,axios,Scorecard,6.75,0.7011642949547219,773,most_starred
+axios/axios,axios,oC maint.,0.0,0.6214470284237726,774,most_starred
+axios/axios,axios,oC security,0.0,0.8901808785529716,774,most_starred
+axios/axios,axios,CrOSSD crit.,78.0,0.13971539456662355,773,most_starred
+axios/axios,axios,OpenSSF crit.,0.78798,0.0641025641025641,780,most_starred
+Lightning-AI/pytorch-lightning,Lightning,Bus factor,2.0,0.7495934959349594,615,most_starred
+Lightning-AI/pytorch-lightning,Lightning,Support rate,14.59838504037399,0.3432642487046632,772,most_starred
+Lightning-AI/pytorch-lightning,Lightning,Maturity,73.33333333333334,0.6474358974358975,780,most_starred
+Lightning-AI/pytorch-lightning,Lightning,Maintained,10.0,1.0,774,most_starred
+Lightning-AI/pytorch-lightning,Lightning,Scorecard,4.8,0.16946959896507116,773,most_starred
+Lightning-AI/pytorch-lightning,Lightning,oC maint.,0.0,0.6214470284237726,774,most_starred
+Lightning-AI/pytorch-lightning,Lightning,oC security,0.0,0.8901808785529716,774,most_starred
+Lightning-AI/pytorch-lightning,Lightning,CrOSSD crit.,77.0,0.1630012936610608,773,most_starred
+Lightning-AI/pytorch-lightning,Lightning,OpenSSF crit.,0.66775,0.3333333333333333,780,most_starred
+ultralytics/ultralytics,Ultralytics,Bus factor,2.0,0.8559006211180125,805,random_sample
+ultralytics/ultralytics,Ultralytics,Support rate,1.216524655997783,0.12078651685393259,712,random_sample
+ultralytics/ultralytics,Ultralytics,Maturity,60.0,0.29768467475192945,907,random_sample
+ultralytics/ultralytics,Ultralytics,Maintained,10.0,1.0,870,random_sample
+ultralytics/ultralytics,Ultralytics,Scorecard,4.9,0.2186421173762946,869,random_sample
+ultralytics/ultralytics,Ultralytics,oC maint.,3.0,1.0,870,random_sample
+ultralytics/ultralytics,Ultralytics,oC security,0.0,0.9505747126436782,870,random_sample
+ultralytics/ultralytics,Ultralytics,CrOSSD crit.,74.0,0.032167832167832165,715,random_sample
+ultralytics/ultralytics,Ultralytics,OpenSSF crit.,0.61581,0.19365609348914858,599,random_sample
+facebook/react,React,Bus factor,2.0,0.7495934959349594,615,most_starred
+facebook/react,React,Support rate,7.142422274535271,0.18393782383419688,772,most_starred
+facebook/react,React,Maturity,60.0,0.16794871794871793,780,most_starred
+facebook/react,React,Maintained,10.0,1.0,774,most_starred
+facebook/react,React,Scorecard,6.45,0.6054333764553687,773,most_starred
+facebook/react,React,oC maint.,0.0,0.6214470284237726,774,most_starred
+facebook/react,React,oC security,0.0,0.8901808785529716,774,most_starred
+facebook/react,React,CrOSSD crit.,83.0,0.062095730918499355,773,most_starred
+facebook/react,React,OpenSSF crit.,0.85574,0.014102564102564103,780,most_starred
+mongodb/mongo,MongoDB,Bus factor,0.0,0.26666666666666666,615,most_starred
+mongodb/mongo,MongoDB,Support rate,27.27272727272727,0.5181347150259067,772,most_starred
+mongodb/mongo,MongoDB,Maturity,73.33333333333334,0.6474358974358975,780,most_starred
+mongodb/mongo,MongoDB,Maintained,10.0,1.0,774,most_starred
+mongodb/mongo,MongoDB,Scorecard,4.384615384615385,0.11513583441138421,773,most_starred
+mongodb/mongo,MongoDB,oC maint.,3.0,1.0,774,most_starred
+mongodb/mongo,MongoDB,oC security,0.0,0.8901808785529716,774,most_starred
+mongodb/mongo,MongoDB,CrOSSD crit.,50.0,0.6830530401034929,773,most_starred
+mongodb/mongo,MongoDB,OpenSSF crit.,0.53761,0.7192307692307692,780,most_starred
+minio/minio,MinIO,Bus factor,3.0,0.8504065040650407,615,most_starred
+minio/minio,MinIO,Support rate,7.659625196700206,0.20077720207253885,772,most_starred
+minio/minio,MinIO,Maturity,73.33333333333334,0.6474358974358975,780,most_starred
+minio/minio,MinIO,Maintained,10.0,1.0,774,most_starred
+minio/minio,MinIO,Scorecard,7.35,0.7981888745148771,773,most_starred
+minio/minio,MinIO,oC maint.,3.0,1.0,774,most_starred
+minio/minio,MinIO,oC security,2.0,1.0,774,most_starred
+minio/minio,MinIO,CrOSSD crit.,71.0,0.3001293661060802,773,most_starred
+minio/minio,MinIO,OpenSSF crit.,0.60761,0.5089743589743589,780,most_starred
+tukaani-project/xz,XZ Utils*,Bus factor,,,805,random_sample
+tukaani-project/xz,XZ Utils*,Support rate,,,712,random_sample
+tukaani-project/xz,XZ Utils*,Maturity,,,907,random_sample
+tukaani-project/xz,XZ Utils*,Maintained,10.0,1.0,870,random_sample
+tukaani-project/xz,XZ Utils*,Scorecard,6.7,0.8550057537399309,869,random_sample
+tukaani-project/xz,XZ Utils*,oC maint.,3.0,1.0,870,random_sample
+tukaani-project/xz,XZ Utils*,oC security,0.0,0.9505747126436782,870,random_sample
+tukaani-project/xz,XZ Utils*,CrOSSD crit.,,,715,random_sample
+tukaani-project/xz,XZ Utils*,OpenSSF crit.,0.55425,0.3005008347245409,599,random_sample
+tj-actions/changed-files,tj-actions*,Bus factor,,,805,random_sample
+tj-actions/changed-files,tj-actions*,Support rate,,,712,random_sample
+tj-actions/changed-files,tj-actions*,Maturity,,,907,random_sample
+tj-actions/changed-files,tj-actions*,Maintained,10.0,1.0,870,random_sample
+tj-actions/changed-files,tj-actions*,Scorecard,6.0,0.7077100115074798,869,random_sample
+tj-actions/changed-files,tj-actions*,oC maint.,2.0,0.9091954022988505,870,random_sample
+tj-actions/changed-files,tj-actions*,oC security,1.0,0.9908045977011494,870,random_sample
+tj-actions/changed-files,tj-actions*,CrOSSD crit.,,,715,random_sample
+tj-actions/changed-files,tj-actions*,OpenSSF crit.,0.62765,0.17696160267111852,599,random_sample
