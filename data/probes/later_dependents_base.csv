@@ -1,0 +1,4 @@
+score,with_package,no_row,first_date_only,last_date_only,both,n,rho,rho_t0,within_rho
+counts,579.0,164.0,69.0,16.0,330.0,,,,
+CrOSSD criticality,,,,,,575.0,0.5665818722029518,0.857832062793972,0.12069391388211814
+OpenSSF Criticality,,,,,,545.0,0.5190193486486804,0.862449439375326,0.15939796085390276

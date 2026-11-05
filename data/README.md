@@ -36,6 +36,26 @@ Checksums are computed with `shasum -a 256 <file>`.
 | `raw/github/gone_2024-08-01.jsonl` | Software Heritage visits of repositories gone from GitHub | Software Heritage API | 2026-11-03 | `dd13852b631e84b768b19704693d494c9d44007eb10a776978624075ca0aa86e` | CC-BY 4.0 |
 | `raw/depsdev/dependents_2024-07-29.parquet` | dependents per package at the snapshot before t0, for I1 | BigQuery `deps_dev_v1.Dependents` | 2026-11-03 | `754131ca1262c12033812c1961af82162a97a749eded1ad21af960a36a8cb45c` | CC-BY 4.0 |
 | `raw/github/issues_2024-08-01.jsonl` | issues opened in the window, with maintainer response within 90 days; stops at 3 under the strictest reading | GitHub GraphQL | 2026-11-03 | `1c615e55e25b6e8caec274a784ccef6b2b3e6916a5c67b92d80741925c11e898` | GitHub terms |
+| `raw/criticality/history_cohort_2025-01-01.parquet` | published Criticality lists, cohort rows, copy for the second date | `prepare_second_date.py` | 2026-11-04 | `164c6da77cb6e281412b21b8b9549384781f44c0cc4095c16924f371f36d8f1a` | see the row above |
+| `raw/depsdev/dependents_i1b_2024-08-01.parquet` | dependents per package at the snapshots of 2024-07-29 and 2026-07-27 | BigQuery `deps_dev_v1.Dependents` | 2026-11-04 | `db89830d1e6320eff61f380fc36958445a93232e9f0e960f4c0c6f97bf80370a` | CC-BY 4.0 |
+| `raw/depsdev/packages_2026-11-03.jsonl` | release dates per package, current state | deps.dev API v3 | 2026-11-03 | `a2135f5e720af14a14d8180b3101a8a2bd78b9407df50e0068a51dfa8221ac0e` | CC-BY 4.0 |
+| `raw/fidelity/criticality_2026-11-04.jsonl` | rebuilt signals and published score at the date of a published list, fidelity test | GitHub GraphQL | 2026-11-04 | `5cd89eb0f35b1ba477cf2c9cbce65bc97ec71c85df1b0820d5adaca1aee53ca0` | GitHub terms |
+| `raw/fidelity/scorecard_2026-11-04.jsonl` | published and rebuilt check values at the date of a recent published result, fidelity test | Scorecard CLI v5.6.0, GitHub | 2026-11-04 | `dbf52d5b48de4b9ee782e2d51040b0ee405f764c39585641a9042033ea6287c3` | GitHub terms |
+| `raw/gharchive/gone_events_2024-08-01.parquet` | public events after the window under the names of gone repositories, months 2026-08 up to the data freeze | BigQuery `githubarchive` | 2026-11-04 | `f0d64c2dacf3e9f55a8b6811206692a9df5eb59069d1a4ac1940473ae49ca4e5` | see source |
+| `raw/gharchive/gone_events_2025-01-01.parquet` | the same, copy for the second date | `prepare_second_date.py` | 2026-11-04 | `f0d64c2dacf3e9f55a8b6811206692a9df5eb59069d1a4ac1940473ae49ca4e5` | see the row above |
+| `raw/github/demand_2024-08-01.jsonl` | the 25 earliest issues per quarter of the window, with answers within 90 days | GitHub GraphQL | 2026-11-04 | `66c5a3dff04d6ad440e4c38e9f60e99b45455fcaf2b3c8a75d7923a717a24608` | GitHub terms |
+| `raw/github/demand_2025-01-01.jsonl` | the same for the second date | GitHub GraphQL | 2026-11-05 | `21d040fd295e6a3e873955d64f94e39342cc06497ef5816372b892121f0ffa4a` | GitHub terms |
+| `raw/github/gone_2025-01-01.jsonl` | Software Heritage visits of gone repositories, second date | Software Heritage API | 2026-11-04 | `dd13852b631e84b768b19704693d494c9d44007eb10a776978624075ca0aa86e` | CC-BY 4.0 |
+| `raw/github/gone_crossd_2024-08-01.json` | CrOSSD record fields of gone repositories at their last snapshot | CrOSSD API | 2026-11-03 | `52fa34cb2c0975cfd8469aa7c456408458df8a8c2fa48306d3409d80a85defca` | see CrOSSD terms |
+| `raw/github/meta_2025-01-01.jsonl` | as `meta_2024-08-01.jsonl`, second date | GitHub GraphQL | 2026-11-04 | `bb0f39e40bbd8a6e4efafc2c7a28e46084f41cab930951e0b3871927c3544c5a` | GitHub terms |
+| `raw/github/policy_paths_2024-08-01.jsonl` | where a security policy existed at the last commit before t0 | GitHub GraphQL | 2026-11-04 | `29e55230b020de053d68e274a8a8b611e84df580ee1065a02626c6b00ac756de` | GitHub terms |
+| `raw/github/root_files_2024-08-01.jsonl` | file names in the repository root at the last commit before t0 | GitHub GraphQL | 2026-11-04 | `d83752da117b9ddb4fa04148f51beed86c85b35f821575d2dd1df8bb20dada05` | GitHub terms |
+| `raw/github/root_files_2025-01-01.jsonl` | the same for the second date | GitHub GraphQL | 2026-11-05 | `977895c206efb3a194116bae7221ec4fffc33f9e819561d60ae0ac7d18f4f5e3` | GitHub terms |
+| `raw/github/t0_events_2024-08-01.jsonl` | dated issues, pull requests and releases before t0, for the rule-based instruments | GitHub GraphQL | 2026-11-04 | `d07de9c2df1cb66343bb39e714ba99f16ab9f83e74cb77bd9b73db37b37807b1` | GitHub terms |
+| `raw/github/t0_events_2025-01-01.jsonl` | the same for the second date | GitHub GraphQL | 2026-11-05 | `b81ad3f148aa208927159c8ef3f7263ea4e6e7f18b6ef73c934bffe28506207d` | GitHub terms |
+| `raw/github/tags_2025-01-01.jsonl` | tag dates of quiet repositories, second date | GitHub GraphQL | 2026-11-04 | `11d09b303690dbce1f65d9220876aa12ba34beb7460a6a18c2ff72bbcdd20fb3` | GitHub terms |
+| `processed/scorecard_published_2024-07-29.parquet` | published Scorecard results of the cohort at the scan before t0; the source may vanish, so this is the frozen copy | BigQuery `openssf.scorecardcron.scorecard-v2` | 2026-11-05 | `196c9917b08c1dba2cdb3887f6fcb327318fba688571a6769ce17f03ed594352` | CDLA-Permissive-2.0 |
+| `processed/scorecard_published_2024-12-30.parquet` | the same at the scan before the second date; not used in the paper | BigQuery `openssf.scorecardcron.scorecard-v2` | 2026-11-05 | `c9d61f3fc0d0ef1a2ef6b5b7cf0157016c3eb798458e1e554e1681c438397c4a` | CDLA-Permissive-2.0 |
 
 Derived files under `data/probes/`, `data/processed/` and `data/claims/` are regenerated by
 `analysis/run_all.py` and carry no checksum here.
@@ -58,6 +78,8 @@ on rows later than it.
 | Scorecard CLI v5.6.0 at the last commit before t0, seven checks, read 2026-11-04 | `data/raw/scorecard/t0_2024-08-01.jsonl` | last line per project counts; 1,642 of 1,646 with a result |
 | Frozen feature table, from the adapters | `data/processed/features_2024-08-01.parquet` | `5c7807edff66d21ff16b0bd0264a2b2571d8a02478d75efdab30d7cff317f722` |
 | `api.scorecard.dev`, one request per cohort repository | `data/raw/scorecard/published_2026-11-04.jsonl` | none: rebuilt by `collect_published.py`, kept as collected |
+
+Commit-only clones under `raw/git/` are rebuilt by `collect_git.py` and carry no checksum. Scorecard results at a past date: the project announced in August 2026 that its BigQuery dataset is no longer available; it could still be read on 2026-11-05, with scans up to 2026-08-24.
 
 Second freeze date (2025-01-01, robustness): the same sources read 2026-11-04/05 under `*_2025-01-01*`. `gone_events` and `history_cohort` are copies from the first date (`analysis/04_validity/prepare_second_date.py`).
 

@@ -2,7 +2,7 @@
 """The few numbers of the paper that need the raw downloads, as one small table.
 
 Everything else in `export_macros.py` and `case_matrix.py` reads derived files. These numbers come from the
-CrOSSD project index, the deps.dev package details, the fix tags and the XZ Utils clone, none of which is
+CrOSSD project index, the deps.dev package details, the fix tags, the issue samples and the XZ Utils clone, none of which is
 redistributed, so they are computed here once and the table ships with the package.
 
 Output: data/probes/numbers_from_raw.csv
@@ -88,6 +88,20 @@ def main() -> int:
                          cwd=ROOT / "data" / "raw" / "git" / "tukaani-project__xz.git", capture_output=True, text=True, check=True).stdout.splitlines()
     m["CaseXzTan"] = f"{100 * sum(name == 'Jia Tan' for name in log) / len(log):.0f}\\%"
     m["CaseXzCommits"] = str(len(log))
+
+    # The sample of unanswered issues: the 25 earliest issues per quarter, of which the external ones count.
+    with (ROOT / "data" / "raw" / "github" / f"demand_{t0}.jsonl").open() as fh:
+        records = [json.loads(line) for line in fh]
+    start = pd.Timestamp(t0, tz="UTC")
+    sampled, external, capped = 0, 0, 0
+    for rec in records:
+        months = [(pd.Timestamp(i["createdAt"]).year - start.year) * 12 + pd.Timestamp(i["createdAt"]).month - start.month for i in rec["issues"]]
+        sampled += len(rec["issues"])
+        n_external = sum(i["external"] for i in rec["issues"])
+        external += n_external
+        capped += n_external < 10 and pd.Series(months, dtype=int).floordiv(3).value_counts().ge(25).any()
+    m["DemandExternalShare"] = f"{100 * external / sampled:.0f}\\%"
+    m["DemandCapped"] = str(int(capped))
 
     pd.Series(m, name="value").rename_axis("macro").to_csv(ROOT / "data" / "probes" / "numbers_from_raw.csv")
     return 0

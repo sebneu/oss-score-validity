@@ -282,6 +282,19 @@ def main() -> int:
         row = bus.loc[name]
         m |= {key + "N": n(row.n), key + "Auc": f2(row.auroc), key + "Lo": f2(row.auroc_lo), key + "Hi": f2(row.auroc_hi),
               key + "Sim": f2(row.within_commits), key + "SimLo": f2(row.within_commits_lo), key + "SimHi": f2(row.within_commits_hi)}
+    agreement = pd.read_csv(PROBES / "scorecard_published_agreement.csv", index_col=0)["value"]
+    pub = pd.read_csv(PROBES / "validity_scorecard_published.csv").set_index("score")
+    pub_checks = pub[pub.index.str.startswith("check ")].dropna(subset=["auroc"])
+    m |= {"VPubN": n(int(agreement["published"])), "VPubStarred": n(int(agreement["published_most_starred"])), "VPubSample": n(int(agreement["published_filtered"])),
+          "VPubMntExact": f"{100 * float(agreement['maintained_exact']):.0f}\\%", "VPubMntWithin": f"{100 * float(agreement['maintained_within_1']):.0f}\\%",
+          "VPubMntRho": f2(float(agreement["maintained_rho"])), "VPubAggRho": f2(float(agreement["aggregate_rho"])),
+          "VPubMntAuc": f2(pub.loc["published Maintained"].auroc), "VPubMntRebuilt": f2(pub.loc["rebuilt Maintained"].auroc),
+          "VPubAggAuc": f2(pub.loc["published aggregate"].auroc), "VPubAggLo": f2(pub.loc["published aggregate"].auroc_lo), "VPubAggHi": f2(pub.loc["published aggregate"].auroc_hi),
+          "VPubAggRebuilt": f2(pub.loc["rebuilt aggregate"].auroc), "VPubAggN": n(pub.loc["published aggregate"].n), "VPubAggEv": n(pub.loc["published aggregate"].events),
+          "VPubChecksN": n(len(pub_checks)), "VPubChecksMax": f2(pub_checks.auroc.max())}
+    later_base = pd.read_csv(PROBES / "later_dependents_base.csv").set_index("score")
+    m |= {"VLatWithPackage": n(later_base.loc["counts"].with_package), "VLatBoth": n(later_base.loc["counts"].both), "VLatCrc": f2(later_base.loc["CrOSSD criticality"].rho),
+          "VLatCro": f2(later_base.loc["OpenSSF Criticality"].rho), "VLatDep": f2(later_base.loc["CrOSSD criticality"].rho_t0)}
     robust = pd.read_csv(PROBES / "validity_robustness.csv").set_index("score")
     second = pd.read_parquet(ROOT / "data" / "processed" / "outcomes_2025-01-01.parquet")
     m |= {"VSecProjects": n(len(second)), "VSecFailures": n(second.O1.sum()), "VSecGone": words[int(second.O1a_gone.sum())], "VSecUnanswered": n(second.O1c_share.astype("boolean").sum()), "VSecUnansweredBase": n(second.O1c_share.notna().sum()),
