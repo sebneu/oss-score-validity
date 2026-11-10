@@ -23,7 +23,7 @@ python -m venv .venv
 | `analysis/04_validity/` | Validity statistics, `measured_validity.csv` (the summary table as a file), `registered_analysis.csv` (the registered model with Holm correction) |
 | `analysis/05_cases/` | Case panel, outside the statistics |
 | `data/processed/` | Frozen features and outcome labels |
-| `data/probes/` | Results behind each table, among them PR-AUC and lift (`validity_primary.csv`) and all sensitivity variants (`validity_sensitivity.csv`) |
+| `data/probes/` | Results behind each table and each secondary result in the text: PR-AUC and lift (`validity_primary.csv`), results per list (`validity_strata.csv`, `validity_baseline_strata.csv`), secondary outcomes and single measures (`validity_secondary.csv`), sensitivity variants (`validity_sensitivity.csv`), the second freeze date (`validity_robustness.csv`), agreement of the rebuilt Scorecard checks (`fidelity_scorecard.csv`) |
 | `paper/` | Generated tables, number macros and figures |
 | `DECISIONS.md` | Decision log: frozen definitions, amendments, deviations |
 
