@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """RQ2 and RQ3: scores at t0 against later events.
 
-The first script that reads scores and outcomes together. The readings are fixed in docs/decision_log_full.md: Freeze,
-Amendment 1 (A6, A7) and "S5: details fixed before the first join" (commit c8a5a1212fbb).
+The first script that reads scores and outcomes together. The readings are fixed in DECISIONS.md, sections 2 to 5,
+before the first join (commit c8a5a1212fbb).
 
 Outputs, all in data/probes/:
   validity_primary.csv      the 11 primary pairs, pooled, with rules, Holm and verdicts

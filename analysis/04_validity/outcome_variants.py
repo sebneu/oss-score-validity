@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sensitivity variants of the outcomes, as listed in the Freeze section and in A2 of docs/decision_log_full.md.
+"""Sensitivity variants of the outcomes, as listed in DECISIONS.md, section 3.
 
 Reads the cohort and the outcome sources, and no score. Primary labels stay in outcomes_<t0>.parquet.
 

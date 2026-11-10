@@ -6,7 +6,7 @@ Runs the pinned CLI with `--commit` on the checks that run at a commit and read 
 into t0 and stays out. `Code-Review` and `CI-Tests` run here too, and the fidelity step decides how they are reported,
 because they read pull request data through the API. Resumable, one JSON line per project.
 
-License and CI-Tests turned out to read today or to find nothing on old commits (docs/decision_log_full.md, 2026-11-04). They ran on the
+License and CI-Tests turned out to read today or to find nothing on old commits (DECISIONS.md, 2026-11-04). They ran on the
 first 490 projects, which is the evidence for that, and later runs skip them, since CI-Tests uses most of the API budget.
 
 Output: data/raw/scorecard/t0_<t0>.jsonl

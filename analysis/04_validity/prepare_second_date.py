@@ -2,7 +2,7 @@
 """Inputs of the robustness run that are reused from the first freeze date, to save further BigQuery scans.
 
 GH Archive events after August 2026 also lie after the second window, and the stored Criticality lists hold the dates
-before 2025-01-01. Both are copied under the second date; what this leaves out is logged in docs/decision_log_full.md.
+before 2025-01-01. Both are copied under the second date; what this leaves out is logged in DECISIONS.md.
 
 Usage:
     python analysis/04_validity/prepare_second_date.py --t0 2025-01-01

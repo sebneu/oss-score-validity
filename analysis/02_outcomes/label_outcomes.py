@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Label the frozen cohort with the frozen outcomes.
 
-Freeze commit: 7950cce6dafd. The definitions below are copied from docs/decision_log_full.md.
+Freeze commit: 7950cce6dafd. The definitions below are copied from DECISIONS.md.
 A change to any of them is a logged deviation, and the original is reported as well.
 
 O1a  archival or deletion: `archivedAt` in the window, or the repository gone without a redirect,

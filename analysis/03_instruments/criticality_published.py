@@ -2,7 +2,7 @@
 """The Criticality Score as published before t0, and how close our rebuild comes to it (RQ1c).
 
 Takes each cohort project's row from the last list before t0. These values were recorded at the time, so they are the
-registered reading of the instrument (docs/decision_log_full.md, 2026-11-04), with the rebuild from rule_adapters.py as the sensitivity
+registered reading of the instrument (DECISIONS.md, section 5), with the rebuild from rule_adapters.py as the sensitivity
 check and for projects no list covers. The comparison at t0 tests the signals that the list of July 2025 no longer carries.
 
 Outputs:

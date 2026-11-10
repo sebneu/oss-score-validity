@@ -1,6 +1,6 @@
 # Decision log
 
-What was fixed, when, and what changed afterwards. Every change is dated relative to the first join of scores and outcomes, because that decides whether a choice could follow the results. The full chronological log, with all counts and intermediate checks, is in `docs/decision_log_full.md`. Commit hashes refer to the private working repository; what can be checked publicly is the OSF timestamp and the cohort checksum.
+What was fixed, when, and what changed afterwards. Every change is dated relative to the first join of scores and outcomes, because that decides whether a choice could follow the results. The working log behind it, with all counts and intermediate checks, is available from the authors on request. Commit hashes refer to the private working repository; what can be checked publicly is the OSF timestamp and the cohort checksum.
 
 ## 1. Timeline
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """All instruments at the last commit before each incident (case panel).
 
-The cases, components and readings are fixed in docs/decision_log_full.md ("Case panel, extended"). The cases are
+The cases, components and readings are fixed in DECISIONS.md (section 9, "Case panel"). The cases are
 selected on the outcome, so nothing here enters the validity statistics, and no other script reads this output for them.
 
 XZ Utils and tj-actions are not in the CrOSSD panel. Their values are rebuilt by the same rules and carry no recorded
@@ -40,7 +40,7 @@ from collect_git import CLONES, CO_AUTHOR, END, SEP, git, hashed  # noqa: E402
 from collect_scorecard import T0_CHECKS, run  # noqa: E402
 from rebuild_bus_factor import score as bus_score  # noqa: E402
 
-CASES = {  # project: event date, fixed in docs/decision_log_full.md
+CASES = {  # project: event date, fixed in DECISIONS.md
     "axios/axios": "2026-03-31",
     "Lightning-AI/pytorch-lightning": "2026-04-30",
     "ultralytics/ultralytics": "2024-12-05",

@@ -2,8 +2,8 @@
 """Rebuild the rule-based instruments and baselines at t0 from dated events.
 
 Reads the git history, the dated GitHub events and the deps.dev snapshot before t0, and nothing else.
-Readings that the published rules leave open are fixed in docs/decision_log_full.md ("Readings of the
-instruments", 2026-11-04). Nothing here reads an outcome.
+Readings that the published rules leave open are fixed in DECISIONS.md (section 5, "Readings of the
+instruments"). Nothing here reads an outcome.
 
 Scorecard Maintained: (commits + issues with member activity in the last 90 days) / 12, times 10, capped at 10.
   Zero for a project created in the last 90 days. As in the source: checks/evaluation/maintained.go.

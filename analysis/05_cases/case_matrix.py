@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Warning matrix and mechanism table of the case panel, from the readings fixed in docs/decision_log_full.md.
+"""Warning matrix and mechanism table of the case panel, from the readings fixed in DECISIONS.md.
 
 Each cell of the matrix gives the share of the project's list in the cohort at t0 with the same or a worse value. A low
 share means the instrument stood out, and a high share means many other projects looked the same. No outcome is read at

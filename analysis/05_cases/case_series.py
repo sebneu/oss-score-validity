@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """What the monitoring recorded around each illustrative incident (case panel).
 
-The cases and the readings are fixed in docs/decision_log_full.md. They are selected on the outcome,
+The cases and the readings are fixed in DECISIONS.md. They are selected on the outcome,
 so nothing here enters the validity statistics, and no other script reads this output for them.
 Values are dated by `observed_ts`, the time they were read from GitHub.
 

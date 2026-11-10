@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Simple comparisons with naive measures: no model, no multiple-comparison procedure.
 
-A deviation from the registered analysis, made after the results were known ("Statistics stay simple" in
-docs/decision_log_full.md). These readings are descriptive. The registered analysis stays in validity.py.
+A deviation from the registered analysis, made after the results were known (DECISIONS.md, section 6,
+deviation 4). These readings are descriptive. The registered analysis stays in validity.py.
 
 For each primary pair, on the projects where the score and the baseline measures are known:
   - AUROC of the score and of each single baseline measure, with a paired bootstrap interval for the difference;
