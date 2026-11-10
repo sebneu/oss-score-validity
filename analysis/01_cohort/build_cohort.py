@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write the frozen cohort manifest (freeze in DECISIONS.md).
+"""Write the frozen cohort manifest (freeze in docs/decision_log_full.md).
 
 One row per eligible project at t0: its stratum, the snapshot whose values count for it, when
 those values were read from GitHub, and the name GitHub serves now. The file holds no metric

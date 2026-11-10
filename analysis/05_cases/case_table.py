@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Table, figure and macros of the case panel, from the fixed readings (see DECISIONS.md).
+"""Table, figure and macros of the case panel, from the fixed readings (see docs/decision_log_full.md).
 
 Outputs:
   paper/generated/t_cases.tex, paper/generated/cases.tex, paper/figures/case_minio.pdf

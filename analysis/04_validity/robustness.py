@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Robustness: the most-starred list at a second freeze date, with a 12-month window.
 
-Registered in the Freeze section of DECISIONS.md. What this run leaves out and why is logged there:
+Registered in the Freeze section of docs/decision_log_full.md. What this run leaves out and why is logged there:
 no new Scorecard run, so no aggregate; no later-dependents outcome, because that needs two further deps.dev scans.
 Measures as in simple.py, against the same list at the first freeze date.
 

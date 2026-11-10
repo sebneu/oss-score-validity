@@ -11,7 +11,7 @@ What was fixed, when, and what changed afterwards. Every change is dated relativ
 | 2026-11-04, 10:36 UTC | Registered on OSF as a preregistration on existing data: [osf.io/ft8uw](https://osf.io/ft8uw) | as above |
 | 2026-11-04 | Instrument readings and test details fixed (sections 4 and 5) | no score joined |
 | 2026-11-04 | First join of scores and outcomes (commit 6e6ac7d319fc) | — |
-| 2026-11-05 to 2026-11-10 | Changes and added analyses after the results (sections 6 and 7) | results known |
+| 2026-11-04 to 2026-11-10 | Changes and added analyses after the first join (sections 6 and 7) | results known |
 
 If the registration and this log differ, the difference is reported.
 
@@ -36,7 +36,7 @@ If the registration and this log differ, the difference is reported.
 | Unfixed advisory (O2b, primary) | a severe advisory (CVSS v3 ≥ 7.0 or GHSA high or critical; not withdrawn, not malicious) published in the window and attached through a package that names only this repository, with no fixed version listed at the data freeze, at least 90 days after publication, or in KEV |
 | Later dependents (I1b) | dependents at 2026-07-27 of the project's most depended-on package; dependents at 2024-07-29 are the baseline |
 
-**Changed before registration (Amendment 1), original still reported:** unanswered issues as a fixed count of three (it measured issue volume: 0% below 3 issues, 95% at 1,000 or more), maintenance failure as two separate outcomes, impact only for projects with an advisory.
+**Three definitions changed before registration because of the base rates, originals reported as sensitivity variants:** unanswered issues as a fixed count of three (it measured issue volume: 0% below 3 issues, 95% at 1,000 or more); an unfixed advisory as one without a fix released within 90 days of publication (changed at the freeze); impact only for projects with an advisory. Amendment 1 also combined archiving and dormancy into one primary failure outcome.
 
 **Minimum events:** 40 in the pooled cohort; a list gets its own statistics only with 40 events of its own, otherwise it is descriptive.
 
@@ -49,7 +49,7 @@ If the registration and this log differ, the difference is reported.
 - **Warns:** lower bound of the 95% bootstrap interval of the AUROC above 0.60 (Mann-Whitney, ties counted half; percentile bootstrap over projects, 2,000 resamples, seed 20240801). For later dependents: a rank correlation above zero.
 - **Adds information (registered):** logistic baseline on log stars, age, days since last commit, commits in 90 days, contributors in 12 months and dependents; out-of-sample gain in AUROC with a lower bound above 0 and at least 0.02, the score's coefficient in the warning direction, Holm correction over the family. For later dependents the gain in R² over log dependents at t0.
 - **Missing values:** not missing at random (the bus factor goes missing with low activity, the criticality score with few issues). Each score is tested on available values with its coverage; the bus factor also with a missing value read as a warning.
-- **Error rates:** at documented flags only (Maintained = 0; openCode badges absent; openCode response failed), plus "at most 1" for bus and elephant factor, marked as our reading.
+- **Error rates:** at documented flags only (Maintained = 0; openCode maintenance badge absent, below level 2, below level 3; openCode security badge absent; openCode response failed), plus "at most 1" for bus and elephant factor, marked as our reading.
 - **Prevalence:** Rogan–Gladen. Inside one list it returns the observed share by algebra, so error rates from one list correct the flag share of the other; not estimable if the interval of J from the source list includes 0. Fixed before the first join; it goes beyond the registered text.
 - **Expectations, written down beforehand:** maintenance scores warn of failure but add little over recent activity; security scores do not warn of unfixed advisories; criticality scores track later dependents but add little over earlier dependents. All three held.
 
@@ -77,7 +77,7 @@ If the registration and this log differ, the difference is reported.
 
 ## 7. Analyses added after the results (descriptive)
 
-- AUROC on existing repositories only, from a separate random generator: the elephant factor no longer meets the rule there.
+- Intervals for the AUROC on existing repositories only (the point estimates were fixed before the join), from a separate random generator: the elephant factor no longer meets the rule there.
 - The 0.60 line moved to 0.55 and 0.65, to show how the count of warning scores depends on it.
 - The comparison at similar activity, checked with quartiles of the days since the last commit.
 - The published Scorecard scan of 2024-07-29 (v5.0.0, 875 projects) as a test of the rebuild.
