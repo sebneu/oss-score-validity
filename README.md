@@ -25,7 +25,8 @@ python -m venv .venv
 | `data/processed/` | Frozen features and outcome labels |
 | `data/probes/` | Results behind each table and each secondary result in the text: PR-AUC and lift (`validity_primary.csv`), results per list (`validity_strata.csv`, `validity_baseline_strata.csv`), secondary outcomes and single measures (`validity_secondary.csv`), sensitivity variants (`validity_sensitivity.csv`), the second freeze date (`validity_robustness.csv`), agreement of the rebuilt Scorecard checks (`fidelity_scorecard.csv`) |
 | `paper/` | Generated tables, number macros and figures |
-| `DECISIONS.md` | Decision log: frozen definitions, amendments, deviations |
+| `DECISIONS.md` | Decision log: timeline, frozen definitions, every deviation from the registration and when it was made |
+| `docs/decision_log_full.md` | The full chronological record behind it |
 
 ## Licence
 
