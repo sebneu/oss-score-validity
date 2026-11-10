@@ -22,6 +22,9 @@
 \newcommand{\VAggSameCommits}{0.25}
 \newcommand{\VAggSameDays}{0.28}
 \newcommand{\VAggSample}{0.32}
+\newcommand{\VAggSensHigh}{0.40}
+\newcommand{\VAggSensLow}{0.39}
+\newcommand{\VAggSensWarn}{none of two}
 \newcommand{\VAggSim}{0.48}
 \newcommand{\VAggSimDays}{0.46}
 \newcommand{\VAggSimDaysLo}{0.379}
@@ -93,6 +96,9 @@
 \newcommand{\VBusSameCommits}{0.61}
 \newcommand{\VBusSameDays}{0.63}
 \newcommand{\VBusSample}{0.64}
+\newcommand{\VBusSensHigh}{0.70}
+\newcommand{\VBusSensLow}{0.65}
+\newcommand{\VBusSensWarn}{three of four}
 \newcommand{\VBusSim}{0.67}
 \newcommand{\VBusSimDays}{0.66}
 \newcommand{\VBusSimDaysLo}{0.617}
@@ -114,6 +120,7 @@
 \newcommand{\VCrcRhoDiffLo}{$-$0.53}
 \newcommand{\VCrcRhoHi}{0.61}
 \newcommand{\VCrcRhoLo}{0.44}
+\newcommand{\VCrcSensRho}{0.41}
 \newcommand{\VCrcSim}{0.12}
 \newcommand{\VCrcSimHi}{0.24}
 \newcommand{\VCrcSimLo}{0.01}
@@ -127,6 +134,7 @@
 \newcommand{\VCroRhoDiffLo}{$-$0.38}
 \newcommand{\VCroRhoHi}{0.73}
 \newcommand{\VCroRhoLo}{0.59}
+\newcommand{\VCroSensRho}{0.64}
 \newcommand{\VCroSim}{0.17}
 \newcommand{\VCroSimHi}{0.27}
 \newcommand{\VCroSimLo}{0.05}
@@ -155,6 +163,9 @@
 \newcommand{\VEleSameCommits}{0.74}
 \newcommand{\VEleSameDays}{0.76}
 \newcommand{\VEleSample}{0.67}
+\newcommand{\VEleSensHigh}{0.67}
+\newcommand{\VEleSensLow}{0.62}
+\newcommand{\VEleSensWarn}{two of four}
 \newcommand{\VEleSim}{0.65}
 \newcommand{\VEleSimDays}{0.64}
 \newcommand{\VEleSimDaysLo}{0.598}
@@ -207,6 +218,9 @@
 \newcommand{\VMatSameCommits}{0.74}
 \newcommand{\VMatSameDays}{0.76}
 \newcommand{\VMatSample}{0.59}
+\newcommand{\VMatSensHigh}{0.67}
+\newcommand{\VMatSensLow}{0.58}
+\newcommand{\VMatSensWarn}{one of four}
 \newcommand{\VMatSim}{0.63}
 \newcommand{\VMatSimDays}{0.63}
 \newcommand{\VMatSimDaysLo}{0.586}
@@ -235,6 +249,9 @@
 \newcommand{\VMntSameCommits}{0.74}
 \newcommand{\VMntSameDays}{0.76}
 \newcommand{\VMntSample}{0.65}
+\newcommand{\VMntSensHigh}{0.78}
+\newcommand{\VMntSensLow}{0.69}
+\newcommand{\VMntSensWarn}{four of four}
 \newcommand{\VMntSim}{0.62}
 \newcommand{\VMntSimDays}{0.62}
 \newcommand{\VMntSimDaysLo}{0.583}
@@ -265,6 +282,9 @@
 \newcommand{\VOcmSameCommits}{0.74}
 \newcommand{\VOcmSameDays}{0.76}
 \newcommand{\VOcmSample}{0.45}
+\newcommand{\VOcmSensHigh}{0.60}
+\newcommand{\VOcmSensLow}{0.52}
+\newcommand{\VOcmSensWarn}{none of four}
 \newcommand{\VOcmSim}{0.50}
 \newcommand{\VOcmSimDays}{0.50}
 \newcommand{\VOcmSimDaysLo}{0.460}
@@ -289,6 +309,9 @@
 \newcommand{\VOcrSameCommits}{0.76}
 \newcommand{\VOcrSameDays}{0.74}
 \newcommand{\VOcrSample}{0.62}
+\newcommand{\VOcrSensHigh}{0.76}
+\newcommand{\VOcrSensLow}{0.60}
+\newcommand{\VOcrSensWarn}{five of six}
 \newcommand{\VOcrSim}{0.67}
 \newcommand{\VOcrSimDays}{0.67}
 \newcommand{\VOcrSimDaysLo}{0.634}
@@ -315,6 +338,9 @@
 \newcommand{\VOcsSameCommits}{0.25}
 \newcommand{\VOcsSameDays}{0.28}
 \newcommand{\VOcsSample}{0.44}
+\newcommand{\VOcsSensHigh}{0.45}
+\newcommand{\VOcsSensLow}{0.45}
+\newcommand{\VOcsSensWarn}{none of two}
 \newcommand{\VOcsSim}{0.48}
 \newcommand{\VOcsSimDays}{0.47}
 \newcommand{\VOcsSimDaysLo}{0.405}
@@ -354,23 +380,64 @@
 \newcommand{\VPubSample}{230}
 \newcommand{\VPubStarred}{645}
 \newcommand{\VRTwoBase}{0.95}
+\newcommand{\VRefAgeFailure}{0.68}
+\newcommand{\VRefAgeUnanswered}{0.54}
+\newcommand{\VRefAgeUnfixed}{0.48}
+\newcommand{\VRefCommitsFailure}{0.74}
+\newcommand{\VRefCommitsUnanswered}{0.76}
+\newcommand{\VRefCommitsUnfixed}{0.25}
+\newcommand{\VRefContrFailure}{0.75}
+\newcommand{\VRefContrUnanswered}{0.68}
+\newcommand{\VRefContrUnfixed}{0.20}
+\newcommand{\VRefDaysFailure}{0.76}
+\newcommand{\VRefDaysUnanswered}{0.74}
+\newcommand{\VRefDaysUnfixed}{0.28}
+\newcommand{\VRefDepFailure}{0.60}
+\newcommand{\VRefDepUnanswered}{0.53}
+\newcommand{\VRefDepUnfixed}{0.59}
+\newcommand{\VRefStarsFailure}{0.61}
+\newcommand{\VRefStarsUnanswered}{0.41}
+\newcommand{\VRefStarsUnfixed}{0.32}
 \newcommand{\VRhoTzero}{0.98}
+\newcommand{\VSecBusAucAll}{0.81}
 \newcommand{\VSecBusEv}{12}
+\newcommand{\VSecBusSimAll}{0.67}
 \newcommand{\VSecDays}{0.86}
+\newcommand{\VSecEleAucAll}{0.52}
+\newcommand{\VSecEleEv}{51}
+\newcommand{\VSecEleSimAll}{0.52}
 \newcommand{\VSecFailures}{51}
 \newcommand{\VSecGone}{two}
+\newcommand{\VSecMatAucAll}{0.57}
+\newcommand{\VSecMatEv}{51}
+\newcommand{\VSecMatSimAll}{0.55}
 \newcommand{\VSecMntAuc}{0.86}
+\newcommand{\VSecMntAucAll}{0.86}
+\newcommand{\VSecMntEv}{49}
 \newcommand{\VSecMntHi}{0.91}
 \newcommand{\VSecMntLo}{0.80}
 \newcommand{\VSecMntSim}{0.67}
+\newcommand{\VSecMntSimAll}{0.67}
 \newcommand{\VSecMntSimLo}{0.596}
+\newcommand{\VSecOcmAucAll}{0.64}
+\newcommand{\VSecOcmEv}{49}
+\newcommand{\VSecOcmSimAll}{0.57}
 \newcommand{\VSecOcrAuc}{0.67}
+\newcommand{\VSecOcrAucAll}{0.67}
+\newcommand{\VSecOcrEv}{135}
 \newcommand{\VSecOcrLo}{0.64}
 \newcommand{\VSecOcrSim}{0.65}
+\newcommand{\VSecOcrSimAll}{0.65}
 \newcommand{\VSecOcrSimLo}{0.61}
+\newcommand{\VSecOcsAucAll}{0.48}
+\newcommand{\VSecOcsEv}{23}
+\newcommand{\VSecOcsSimAll}{0.50}
 \newcommand{\VSecProjects}{759}
 \newcommand{\VSecSupAuc}{0.35}
+\newcommand{\VSecSupAucAll}{0.35}
+\newcommand{\VSecSupEv}{135}
 \newcommand{\VSecSupSim}{0.56}
+\newcommand{\VSecSupSimAll}{0.56}
 \newcommand{\VSecUnanswered}{135}
 \newcommand{\VSecUnansweredBase}{625}
 \newcommand{\VSensBelow}{2}
@@ -396,6 +463,9 @@
 \newcommand{\VSupSameCommits}{0.76}
 \newcommand{\VSupSameDays}{0.74}
 \newcommand{\VSupSample}{0.53}
+\newcommand{\VSupSensHigh}{0.51}
+\newcommand{\VSupSensLow}{0.40}
+\newcommand{\VSupSensWarn}{none of six}
 \newcommand{\VSupSim}{0.56}
 \newcommand{\VSupSimDays}{0.54}
 \newcommand{\VSupSimDaysLo}{0.489}

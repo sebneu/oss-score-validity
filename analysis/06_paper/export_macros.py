@@ -130,13 +130,11 @@ def main() -> int:
     seen = coverage[(coverage.observed_ts <= end) & (coverage.observed_ts > end - 14 * 86400)]
     latest = seen.sort_values("observed_ts").groupby("project").tail(1)
     latest = latest[latest.project.isin(cohort.project)]
-    rows = []
-    for label, column in (("Maturity level", "src_maturity_level"), ("Elephant factor", "src_elephant_factor"),
-                          ("Support rate", "src_support_rate"), ("Criticality score", "src_criticality_score"),
-                          ("Bus factor", "src_contributions_distributions")):
-        rows.append([label] + [thousands(latest[latest.stratum == s][column].notna().sum()) for s in LISTS])
-    table(GENERATED / "t_coverage.tex", "lrr", ["Metric", "Most-starred", "Filtered"], rows,
-          ["Projects"] + [thousands(cohort_counts[s]) for s in LISTS])
+    for key, column in (("Maturity", "src_maturity_level"), ("Elephant", "src_elephant_factor"),
+                        ("Support", "src_support_rate"), ("Criticality", "src_criticality_score"),
+                        ("Bus", "src_contributions_distributions")):
+        for s, skey in zip(LISTS, ("Starred", "Sample")):
+            m[f"Cov{key}{skey}"] = thousands(latest[latest.stratum == s][column].notna().sum())
 
     # --- bus factor fidelity -----------------------------------------------------------
     fidelity_path = PROBES / "bus_factor_fidelity.csv"
@@ -208,8 +206,9 @@ def main() -> int:
     if fid_path.exists():
         fid = pd.read_csv(fid_path).set_index("check")
         keep = ["Maintained", "Binary-Artifacts", "Dangerous-Workflow", "Token-Permissions", "Pinned-Dependencies", "Code-Review", "Security-Policy"]
-        rows = [[c, str(int(fid.loc[c, "n"])), percent(fid.loc[c, "exact"], 1), percent(fid.loc[c, "within_1"], 1)] for c in keep]
-        table(GENERATED / "t_fidelity.tex", "lrrr", ["Check", "$n$", "Exact", "Within 1"], rows)
+        at_commit = fid.loc[keep[1:]]
+        m["FidCommitMin"] = percent(at_commit.exact.min(), 1)
+        m["FidCommitMinCheck"] = at_commit.exact.idxmin()
         m["FidSample"] = str(int(fid.loc["Maintained", "projects"]))
         m["FidMaintExact"] = percent(fid.loc["Maintained", "exact"], 1)
         m["FidMaintWithin"] = percent(fid.loc["Maintained", "within_1"], 1)
@@ -266,18 +265,12 @@ def main() -> int:
             ["Maintenance failure", m["EvFailure"], m["EvFailureStarred"], m["EvFailureSample"], m["Cohort"]],
             ["\\quad archived or gone", m["EvDeleted"], m["EvDeletedStarred"], m["EvDeletedSample"], m["Cohort"]],
             ["\\quad dormant", m["EvDormant"], m["EvDormantStarred"], m["EvDormantSample"], m["Cohort"]],
+            ["\\qquad with unanswered demand", m["EvDormantDemand"], m["EvDormantDemandStarred"], m["EvDormantDemandSample"], m["Cohort"]],
+            ["\\qquad quiet", m["EvDormantQuiet"], m["EvDormantQuietStarred"], m["EvDormantQuietSample"], m["Cohort"]],
+            ["\\qquad no issue data", m["EvDormantUnknown"], m["EvDormantUnknownStarred"], m["EvDormantUnknownSample"], m["Cohort"]],
             ["Unanswered issues", m["EvUnanswered"], m["EvUnansweredStarred"], m["EvUnansweredSample"], m["BaseUnanswered"]],
             ["Unfixed advisory", m["EvUnfixed"], m["EvUnfixedStarred"], m["EvUnfixedSample"], m["BaseUnfixed"]],
         ],
-    )
-    table(
-        GENERATED / "t_dormancy.tex", "lrr", ["Dormant projects", "Most-starred", "Filtered"],
-        [
-            ["With unanswered demand", m["EvDormantDemandStarred"], m["EvDormantDemandSample"]],
-            ["Quiet, no such issue", m["EvDormantQuietStarred"], m["EvDormantQuietSample"]],
-            ["No issue data", m["EvDormantUnknownStarred"], m["EvDormantUnknownSample"]],
-        ],
-        ["Total", m["EvDormantStarred"], m["EvDormantSample"]],
     )
 
     # The fixed count against the share, by issue volume.

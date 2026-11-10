@@ -3,7 +3,7 @@
 
 Outputs:
   paper/generated/validity.tex             macros
-  paper/generated/t_v_*.tex                one table per sub-aspect
+  paper/generated/t_v_*.tex                the RQ2, threshold, prevalence and summary tables
   analysis/04_validity/measured_validity.csv   the measured validity of each score, for the replication package
   analysis/04_validity/registered_analysis.csv the registered logistic baseline and Holm correction, for the same
 
@@ -198,33 +198,41 @@ def main() -> int:
         return rows
 
     head = ["Score", "Events", "AUROC (95\\% CI)", "Starred", "Filtered"]
-    for outcome, name in (("O1", "failure"), ("O1c_share", "unanswered"), ("O2b", "unfixed")):
-        table(GENERATED / f"t_v_{name}.tex", "lrlrr", head, rq2_rows(outcome))
+    base_strata = pd.read_csv(PROBES / "validity_baseline_strata.csv").set_index(["score", "outcome", "stratum"])
+
+    def reference_rows(outcome: str) -> list[list[str]]:
+        rows = []
+        for name, label in (("Baseline days_since_last_commit", "Days since last commit"), ("Baseline commits_90d", "Commits in 90 days")):
+            r = side(name, outcome)
+            lists = []
+            for stratum in ("most_starred", "random_sample"):
+                b = base_strata.loc[(name, outcome, stratum)]
+                lists.append(f"\\textit{{{f2(b.auroc)}}}" if b.own_statistics else f"\\textit{{({f2(b.auroc)})}}")
+            rows.append([f"\\quad\\textit{{{label}}}", f"\\textit{{{n(r.events)}}}", f"\\textit{{{ci(r.auroc, r.auroc_lo, r.auroc_hi)}}}", *lists])
+        return rows
+
     rows = []
-    for score, key in KEYS.items():
-        if primary.loc[score].outcome != "O1":
-            continue
-        rows.append([NAMES[score]] + [f2(side(score, o).auroc) if side(score, o).events >= 40 else f"({f2(side(score, o).auroc)})" for o in ("O1a_v2", "O1b_demand", "O1b_quiet")])
-    table(GENERATED / "t_v_split.tex", "lrrr", ["Score", "Gone", "Demand", "Quiet"], rows)
+    for outcome in ("O1", "O1c_share", "O2b"):
+        if rows:
+            rows.append(["\\midrule\n\\multicolumn{5}{l}{" + OUTCOMES[outcome] + "}"])
+        else:
+            rows.append(["\\multicolumn{5}{l}{" + OUTCOMES[outcome] + "}"])
+        rows += rq2_rows(outcome) + reference_rows(outcome)
+    table(GENERATED / "t_v_primary.tex", "lrlrr", head, rows)
     for o, key in (("O1a_v2", "Gone"), ("O1b_demand", "Demand"), ("O1b_quiet", "Quiet")):
         for score, k in (("Scorecard Maintained", "Mnt"), ("openCode maintenance", "Ocm"), ("CrOSSD elephant factor", "Ele"), ("CrOSSD bus factor", "Bus")):
             m[f"V{k}{key}"] = f2(side(score, o).auroc)
-    table(GENERATED / "t_v_later.tex", "lrlrl",
-          ["Score", "$n$", "$\\rho$ (95\\% CI)", "At $t_0$", "Similar (95\\% CI)"],
-          [[NAMES[s], n(r.n), ci(r.rho, r.rho_lo, r.rho_hi), f2(r.rho_t0), ci(simple.loc[s].within_rho, simple.loc[s].within_rho_lo, simple.loc[s].within_rho_hi)] for s, r in primary[primary.outcome == "I1b"].iterrows()])
 
     # --- RQ3 tables ---------------------------------------------------------------------
     singles = (("Baseline days_since_last_commit", "Days"), ("Baseline commits_90d", "Commits"), ("Baseline contributors_12m", "Contrib."), ("Baseline age_days", "Age"), ("Baseline stars", "Stars"), ("Baseline dependents", "Dep."))
-    rows = [[OUTCOMES[o], *[f2(side(name, o).auroc) for name, _ in singles]] for o in ("O1", "O1c_share", "O2b")]
-    table(GENERATED / "t_v_baseline.tex", "lrrrrrr", ["Outcome", *[label for _, label in singles]], rows)
+    for name, label in singles:
+        key = label.rstrip(".").replace("Contrib", "Contr")
+        for o, okey in (("O1", "Failure"), ("O1c_share", "Unanswered"), ("O2b", "Unfixed")):
+            m[f"VRef{key}{okey}"] = f2(side(name, o).auroc)
     for outcome, key in (("O1c_share", "Unanswered"), ("O2b", "Unfixed")):
         m[f"VSingleDays{key}"] = f2(side("Baseline days_since_last_commit", outcome).auroc)
         m[f"VSingleCommits{key}"] = f2(side("Baseline commits_90d", outcome).auroc)
 
-    rows = []
-    for score, r in simple[simple.outcome != "I1b"].iterrows():
-        rows.append([NAMES[score], OUTCOMES[r.outcome], f2(r.auroc), f2(r.days_since_last_commit_auroc), f2(r.commits_90d_auroc), ci(r.within_commits, r.within_commits_lo, r.within_commits_hi), yes(bool(r.holds))])
-    table(GENERATED / "t_v_similar.tex", "llrrrlc", ["Score", "Outcome", "AUROC", "Days", "Commits", "Similar activity (95\\% CI)", "Holds"], rows)
 
     rows = []
     for score, r in primary.iterrows():
@@ -264,15 +272,16 @@ def main() -> int:
         m |= {f"VPrev{key}Flag": pc(p.flag_share, 1), f"VPrev{key}Corr": pc(p.corrected, 1), f"VPrev{key}Lo": pc(p.corrected_lo, 1), f"VPrev{key}Hi": pc(p.corrected_hi, 1), f"VPrev{key}Obs": pc(p.observed_share, 1)}
 
     # --- sensitivity ------------------------------------------------------------------
-    rows = []
     for score, part in sensitivity.groupby("score", sort=False):
         counted = part[part.own_statistics.astype(bool)]
+        key = KEYS[score]
         if primary.loc[score].outcome == "I1b":
-            rows.append([NAMES[score], "1", f2(part.rho.iloc[0]), "--"])
+            m[f"V{key}SensRho"] = f2(part.rho.iloc[0])
             continue
         above = int((counted.auroc_lo > 0.60).sum())
-        rows.append([NAMES[score], str(len(counted)), f"{f2(counted.auroc.min())} to {f2(counted.auroc.max())}", f"{above} of {len(counted)}"])
-    table(GENERATED / "t_v_sensitivity.tex", "lrlc", ["Score", "Variants", "AUROC or $\\rho$", "Warns"], rows)
+        m[f"V{key}SensWarn"] = f"{words[above]} of {words[len(counted)]}"
+        m[f"V{key}SensLow"] = f2(counted.auroc.min())
+        m[f"V{key}SensHigh"] = f2(counted.auroc.max())
     below = sensitivity[~sensitivity.own_statistics.astype(bool)]
     m["VSensBelow"] = n(below.outcome.nunique())
 
@@ -302,12 +311,11 @@ def main() -> int:
           "VSecDays": f2(robust.loc["Scorecard Maintained"].days_since_last_commit_auroc), "VSecOcrAuc": f2(robust.loc["openCode issue response"].auroc_all), "VSecOcrLo": f2(robust.loc["openCode issue response"].auroc_all_lo),
           "VSecOcrSim": f2(robust.loc["openCode issue response"].within_commits), "VSecOcrSimLo": f2(robust.loc["openCode issue response"].within_commits_lo), "VSecSupAuc": f2(robust.loc["CrOSSD support rate"].auroc_all), "VSecSupSim": f2(robust.loc["CrOSSD support rate"].within_commits),
           "VSecMntSim": f2(robust.loc["Scorecard Maintained"].within_commits), "VSecMntSimLo": f3(robust.loc["Scorecard Maintained"].within_commits_lo)}
-    rows = []
     for score, r in robust.iterrows():
-        value = ci(r.auroc_all, r.auroc_all_lo, r.auroc_all_hi)
-        value = (f"\\textbf{{{value}}}" if r.auroc_all_lo > 0.60 else value) if r.own_statistics else f"({f2(r.auroc_all)})"
-        rows.append([NAMES[score], n(r.events_all), value, per_list(score, "most_starred"), f2(r.within_commits)])
-    table(GENERATED / "t_v_second.tex", "lrlrr", ["Score", "Events", "AUROC (95\\% CI)", "2024", "Similar"], rows)
+        key = KEYS[score]
+        m[f"VSec{key}Ev"] = n(r.events_all)
+        m[f"VSec{key}AucAll"] = f2(r.auroc_all)
+        m[f"VSec{key}SimAll"] = f2(r.within_commits)
 
     # --- the summary table and its file --------------------------------------------------
     evidence = features.groupby(["instrument", "component"]).evidence.agg(lambda s: s[s != "not_backdatable"].mode().iloc[0] if (s != "not_backdatable").any() else "not_backdatable")
@@ -322,13 +330,14 @@ def main() -> int:
         measure = f"$\\rho$ {f2(r.rho)}" if r.outcome == "I1b" else f2(r.auroc)
         sim = simple.loc[score]
         similar = sim.within_rho if r.outcome == "I1b" else sim.within_commits
-        rows.append([NAMES[score], OUTCOMES[r.outcome], EVIDENCE.get(kind, kind), pc(r.coverage), measure, f"{pc(se)} / {pc(sp)}" if point else "--", "$\\rho>0$" if r.outcome == "I1b" and r.warns else yes(r.warns), f2(similar), "$\\rho>0$" if r.outcome == "I1b" and sim.holds else yes(bool(sim.holds))])
+        similar_ci = ci(sim.within_rho, sim.within_rho_lo, sim.within_rho_hi) if r.outcome == "I1b" else ci(sim.within_commits, sim.within_commits_lo, sim.within_commits_hi)
+        rows.append([NAMES[score], OUTCOMES[r.outcome], EVIDENCE.get(kind, kind), pc(r.coverage), measure, f"{pc(se)} / {pc(sp)}" if point else "--", "$\\rho>0$" if r.outcome == "I1b" and r.warns else yes(r.warns), similar_ci, "$\\rho>0$" if r.outcome == "I1b" and sim.holds else yes(bool(sim.holds))])
         records.append({"score": score, "component": r.component, "outcome": r.outcome, "horizon_months": 24, "evidence": kind, "coverage": round(r.coverage, 4), "n": int(r.n),
                         "auroc": None if r.outcome == "I1b" else round(r.auroc, 4), "auroc_lo": None if r.outcome == "I1b" else round(r.auroc_lo, 4), "auroc_hi": None if r.outcome == "I1b" else round(r.auroc_hi, 4),
                         "rank_correlation": round(r.rho, 4) if r.outcome == "I1b" else None, "operating_point": point, "sensitivity": None if pd.isna(se) else round(se, 4), "specificity": None if pd.isna(sp) else round(sp, 4),
                         "pr_auc": None if r.outcome == "I1b" else round(r.pr_auc, 4), "lift_worst_decile": None if r.outcome == "I1b" else round(r.lift, 4),
                         "registered_gain": round(r.gain, 4), "registered_gain_lo": round(r.gain_lo, 4), "registered_gain_hi": round(r.gain_hi, 4), "warns": bool(r.warns), "similar_activity": round(similar, 4), "holds_at_similar_activity": bool(sim.holds), "adds_registered_model": bool(r.adds)})
-    table(GENERATED / "t_v_summary.tex", "llrrrccrc", ["Score", "Outcome", "Evidence", "Coverage", "AUROC", "Se / Sp", "Warns", "Similar", "Holds"], rows)
+    table(GENERATED / "t_v_summary.tex", "llrrrcclc", ["Score", "Outcome", "Evidence", "Coverage", "AUROC", "Se / Sp", "Warns", "Similar (95\\% CI)", "Holds"], rows)
     summary = GENERATED / "t_v_summary.tex"
     summary.write_text(summary.read_text().replace(f"{NAMES['CrOSSD criticality']} &", f"\\midrule\n{NAMES['CrOSSD criticality']} &"))
     pd.DataFrame(records).to_csv(ROOT / "analysis" / "04_validity" / "measured_validity.csv", index=False)
