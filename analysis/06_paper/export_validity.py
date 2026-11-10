@@ -160,6 +160,9 @@ def main() -> int:
     m["VBusMissingRate"] = pc(flags.bus_missing_rate)
     m["VBusKnownRate"] = pc(flags.bus_known_rate)
     m["VSupMax"] = f"{flags.support_max:.0f}"
+    support_values = features[(features.instrument == "crossd") & (features.component == "support_rate")].value.dropna()
+    m["VSupKnown"] = n(len(support_values))
+    m["VSupOver"] = words.get(int((support_values > 100).sum()), n((support_values > 100).sum()))
     m["VSupRho"] = f2(flags.support_rho)
     m["VSupRhoVol"] = f2(flags.support_rho_volume)
 
