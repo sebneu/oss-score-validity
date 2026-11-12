@@ -81,6 +81,7 @@ If the registration and this log differ, the difference is reported.
 - The 0.60 line moved to 0.55 and 0.65, to show how the count of warning scores depends on it.
 - The comparison at similar activity, checked with quartiles of the days since the last commit.
 - The published Scorecard scan of 2024-07-29 (v5.0.0, 875 projects) as a test of the rebuild.
+- The same comparison without the 232 projects whose scanned commit is from after t0 (added 2026-11-12): a weekly scan carries its start date and runs for several days. Commit dates in `data/processed/scorecard_published_2024-07-29_commits.parquet`; the earlier rows are unchanged.
 - The bus factor as documented (six months): it warns, and does not hold at similar activity.
 - Later dependents with the package fixed at t0 (outside the paper): same conclusion.
 - Days since the last commit and commits in 90 days per list, as reference rows, from a separate seed.

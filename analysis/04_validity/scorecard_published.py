@@ -5,6 +5,10 @@ Agreement of the values, and the same statistics on the same projects. Added aft
 published values cover part of the cohort, unevenly across the lists, so they test the rebuild and do not replace it.
 A score of -1 means inconclusive and counts as missing.
 
+The scan starts on its date and runs for several days. Projects whose scanned commit is from after t0
+(`date_scanned_commits.py`) were certainly read late; the comparison is repeated without them, with its own seed, so the
+rows above do not change.
+
 Outputs: data/probes/scorecard_published_agreement.csv, data/probes/validity_scorecard_published.csv
 
 Usage:
@@ -72,7 +76,6 @@ def main() -> int:
         "aggregate_n": int(both_a.sum()), "aggregate_rho": v.spearman(ours_a[both_a], pub_a[both_a]),
         "versions": "|".join(sorted(raw.version.dropna().unique())),
     }
-    pd.Series(agreement).to_csv(v.PROBES / "scorecard_published_agreement.csv", header=["value"])
 
     specs = [
         ("published Maintained", "published", "Maintained", "O1", -1),
@@ -92,6 +95,29 @@ def main() -> int:
         draws = v.resamples(int(known.sum()), args.resamples, rng)
         lo, hi = v.interval(np.array([v.auroc(values[known][i], y[i]) for i in draws]))
         rows.append({"score": f"check {check}", "outcome": "O2b", "n": int(known.sum()), "events": int(y.sum()), "auroc": v.auroc(values[known], y), "auroc_lo": lo, "auroc_hi": hi})
+    # Without the projects whose scanned commit is from after t0.
+    dates = pd.read_parquet(v.PROCESSED / f"scorecard_published_{args.scan}_commits.parquet").set_index("project").committed
+    stamp = pd.Timestamp(args.t0, tz="UTC").timestamp()
+    late = dates.reindex(raw.index).ge(stamp).fillna(False).to_numpy(dtype=bool)
+    after = (dates[dates >= stamp] - stamp) / 86400
+    early = numbers.copy()
+    early.loc[early.index.isin(raw.index[late])] = np.nan
+    early_data = WithPublished(base, early)
+    pub_m_e, pub_a_e = early["Maintained"].to_numpy(), early["aggregate"].to_numpy()
+    both_e = ~np.isnan(ours_m) & ~np.isnan(pub_m_e)
+    both_ae = ~np.isnan(ours_a) & ~np.isnan(pub_a_e)
+    agreement |= {
+        "commits_dated": int(dates.reindex(raw.index).notna().sum()), "commits_after_t0": int(late.sum()),
+        "commits_after_t0_max_days": float(after.max()) if len(after) else 0.0,
+        "early_maintained_n": int(both_e.sum()), "early_maintained_exact": float((ours_m[both_e] == pub_m_e[both_e]).mean()),
+        "early_maintained_within_1": float((np.abs(ours_m[both_e] - pub_m_e[both_e]) <= 1).mean()),
+        "early_maintained_rho": v.spearman(ours_m[both_e], pub_m_e[both_e]), "early_aggregate_rho": v.spearman(ours_a[both_ae], pub_a_e[both_ae]),
+    }
+    early_rng = np.random.default_rng([v.SEED, 7])
+    for spec in specs:
+        row = simple.binary_row(early_data, (spec[0] + ", commits before t0", *spec[1:]), args.resamples, early_rng)
+        rows.append(row)
+    pd.Series(agreement).to_csv(v.PROBES / "scorecard_published_agreement.csv", header=["value"])
     table = pd.DataFrame(rows)
     table.to_csv(v.PROBES / "validity_scorecard_published.csv", index=False)
     print(pd.Series(agreement).to_string())

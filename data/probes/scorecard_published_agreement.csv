@@ -12,3 +12,11 @@ maintained_rho,0.9687992135192243
 aggregate_n,869
 aggregate_rho,0.8244234459807169
 versions,v5.0.0-12-g362b9772|v5.0.0-16-ga8eae2d8|v5.0.0-5-g2aa077c4
+commits_dated,856
+commits_after_t0,232
+commits_after_t0_max_days,3.7948958333333334
+early_maintained_n,639
+early_maintained_exact,0.9217527386541471
+early_maintained_within_1,0.9577464788732394
+early_maintained_rho,0.9675182471768199
+early_aggregate_rho,0.8322166744214009

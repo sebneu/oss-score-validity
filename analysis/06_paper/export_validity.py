@@ -304,6 +304,15 @@ def main() -> int:
           "VPubAggAuc": f2(pub.loc["published aggregate"].auroc), "VPubAggLo": f2(pub.loc["published aggregate"].auroc_lo), "VPubAggHi": f2(pub.loc["published aggregate"].auroc_hi),
           "VPubAggRebuilt": f2(pub.loc["rebuilt aggregate"].auroc), "VPubAggN": n(pub.loc["published aggregate"].n), "VPubAggEv": n(pub.loc["published aggregate"].events),
           "VPubChecksN": n(len(pub_checks)), "VPubChecksMax": f2(pub_checks.auroc.max())}
+    # the scan runs for several days: projects whose scanned commit is from after t0, and the comparison without them
+    last_day = pd.Timestamp("2024-08-01") + pd.Timedelta(days=float(agreement["commits_after_t0_max_days"]))
+    m |= {"VPubLate": n(int(float(agreement["commits_after_t0"]))), "VPubLateUntil": f"{last_day.day} {last_day:%B}",
+          "VPubEarlyMntExact": f"{100 * float(agreement['early_maintained_exact']):.0f}\\%",
+          "VPubEarlyMntAuc": f2(pub.loc["published Maintained, commits before t0"].auroc),
+          "VPubEarlyMntRebuilt": f2(pub.loc["rebuilt Maintained, commits before t0"].auroc),
+          "VPubEarlyAggAuc": f2(pub.loc["published aggregate, commits before t0"].auroc),
+          "VPubEarlyAggRebuilt": f2(pub.loc["rebuilt aggregate, commits before t0"].auroc),
+          "VPubEarlyAggEv": n(pub.loc["published aggregate, commits before t0"].events)}
     later_base = pd.read_csv(PROBES / "later_dependents_base.csv").set_index("score")
     m |= {"VLatWithPackage": n(later_base.loc["counts"].with_package), "VLatBoth": n(later_base.loc["counts"].both), "VLatCrc": f2(later_base.loc["CrOSSD criticality"].rho),
           "VLatCro": f2(later_base.loc["OpenSSF Criticality"].rho), "VLatDep": f2(later_base.loc["CrOSSD criticality"].rho_t0)}

@@ -80,6 +80,7 @@ STAGES: list[tuple[str, str, list[str]]] = [
             "analysis/03_instruments/scorecard_adapter.py --t0 2024-08-01",
             "analysis/03_instruments/freeze_features.py --t0 2024-08-01",
             "analysis/03_instruments/collect_scorecard_published.py --t0 2024-08-01 --scan 2024-07-29",
+            "analysis/03_instruments/date_scanned_commits.py --scan 2024-07-29",
             "analysis/03_instruments/collect_published.py --t0 2024-08-01 --accessed 2026-11-04",
             "analysis/03_instruments/freshness.py --accessed 2026-11-04",
             "analysis/03_instruments/fidelity_recent.py --accessed 2026-11-04 --sample 150",
