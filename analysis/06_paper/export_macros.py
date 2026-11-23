@@ -68,6 +68,14 @@ def main() -> int:
     m["PanelWithSnapshots"] = thousands(len(per_project))
     m["PanelSnapshotCount"] = thousands(len(coverage))
     m["PanelScansMean"] = f"{len(coverage) / len(per_project):.0f}"
+    # How long the record runs: first and last snapshot, in months and in weeks with a scan.
+    first, last_snap = coverage.snapshot_utc.min(), coverage.snapshot_utc.max()
+    m["PanelFirst"] = first.strftime("%B %Y")
+    m["PanelLast"] = last_snap.strftime("%B %Y")
+    m["PanelMonths"] = f"{(last_snap - first).days / 30.44:.0f}"
+    m["PanelWeeks"] = thousands(coverage.snapshot_utc.dt.tz_localize(None).dt.to_period("W").nunique())
+    m["PanelWeeksSpan"] = f"{(last_snap - first).days // 7 + 1}"
+    m["PanelStarredScansMedian"] = f"{coverage[coverage.stratum == 'most_starred'].groupby('project').size().median():.0f}"
     counts = per_project.stratum.value_counts()
     m["ListStarred"] = thousands(counts["most_starred"])
     m["ListSample"] = thousands(counts["random_sample"])
