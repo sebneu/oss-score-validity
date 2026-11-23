@@ -151,7 +151,7 @@ def main() -> int:
         return frame.reindex(peers)[column].dropna()
 
     shares = {}
-    lines = ["\\setlength{\\tabcolsep}{3pt}", "\\begin{tabular}{>{\\raggedright\\arraybackslash}p{1.35cm}>{\\raggedright\\arraybackslash}p{2.15cm}>{\\raggedright\\arraybackslash}p{2.45cm}rr}", "\\toprule", "Case & Mechanism & Component & Value & Share \\\\", "\\midrule"]
+    lines = ["\\setlength{\\tabcolsep}{3pt}", "\\begin{tabular}{>{\\raggedright\\arraybackslash}p{2.6cm}>{\\raggedright\\arraybackslash}p{4.4cm}>{\\raggedright\\arraybackslash}p{4.6cm}rr}", "\\toprule", "Case & Mechanism & Component & Value & Share \\\\", "\\midrule"]
     for label, mechanism, components in MECHANISM:
         project = next(p for p, name in ROWS if name == label)
         rec = rebuilt[project]

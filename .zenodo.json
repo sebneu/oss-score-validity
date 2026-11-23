@@ -1,13 +1,20 @@
 {
   "upload_type": "software",
   "title": "Replication package: Would the Score Have Warned Us? A Point-in-Time Validity Audit of Open-Source Health and Security Scores",
-  "description": "<p>Code and derived data for the paper. Raw source data are not redistributed.</p>",
+  "description": "<p>Code and derived data for the paper. Raw source data are not redistributed.</p><p>Version 1.1.0 adds the dating of the commits read by the published Scorecard scan of 2024-07-29, with a comparison without the projects whose scanned commit is from after the freeze date; macros for the span of the CrOSSD record and a word count for the manuscript; table layouts for a one-column manuscript. No number published in version 1.0.0 changes.</p>",
   "creators": [
-    {"name": "Neumaier, Sebastian", "affiliation": "University of Applied Sciences St. Pölten, Austria; Vienna University of Economics and Business, Austria", "orcid": "0000-0002-9804-4882"},
-    {"name": "Dam, Tobias", "affiliation": "University of Applied Sciences St. Pölten, Austria"}
+    {
+      "name": "Neumaier, Sebastian",
+      "affiliation": "University of Applied Sciences St. Pölten, Austria; Vienna University of Economics and Business, Austria",
+      "orcid": "0000-0002-9804-4882"
+    },
+    {
+      "name": "Dam, Tobias",
+      "affiliation": "University of Applied Sciences St. Pölten, Austria"
+    }
   ],
   "license": "MIT",
   "access_right": "open",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "notes": "Funded by the Austrian Research Promotion Agency (FFG), project DigiSov-CrOSSD, no. 68758333, and the Internet Stiftung (netidee), project CrOSSD2."
 }
